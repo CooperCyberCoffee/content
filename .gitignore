@@ -1,0 +1,56 @@
+# Environment and secrets
+.env
+*.env
+.env.local
+config.ini
+*_api_key*
+*_token*
+
+# Python
+__pycache__/
+*.py[cod]
+venv/
+env/
+.venv/
+*.egg-info/
+dist/
+build/
+
+# Node (for any JS/TS projects)
+node_modules/
+package-lock.json
+yarn.lock
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Jupyter Notebooks
+.ipynb_checkpoints/
+*.ipynb
+
+# Logs and databases
+*.log
+*.db
+*.sqlite
+
+# Temporary files
+*.tmp
+*.bak
+~*
+
+# Large files (PDFs you're analyzing but shouldn't commit)
+*.pdf
+!example-report.pdf  # except example files you explicitly want
+
+# Output files
+output/
+results/
+*.json
+!example-output.json
