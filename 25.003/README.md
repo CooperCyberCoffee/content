@@ -34,9 +34,9 @@ Teams trusting AI-generated threat intelligence could miss critical indicators. 
 
 Before deploying AI in security operations, you need:
 
-• Validation layers between AI and production systems
-• Clear understanding of where AI helps vs. hinders
-• Human review for structured data requirements
+• Validation layers between AI and production systems\
+• Clear understanding of where AI helps vs. hinders\
+• Human review for structured data requirements\
 • Realistic expectations about AI capabilities
 
 The gap between AI understanding and compliant output is wider than most realize. AI excels at recognizing threats but fails at the boring, critical work of proper formatting.
