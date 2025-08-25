@@ -1,0 +1,343 @@
+{
+  "type": "bundle",
+  "id": "bundle--a8f3c9e2-4b5d-4e6f-8a1b-9c2d3e4f5a6b",
+  "spec_version": "2.1",
+  "created": "2025-07-29T00:00:00.000Z",
+  "modified": "2025-07-29T00:00:00.000Z",
+  "objects": [
+    {
+      "type": "report",
+      "spec_version": "2.1",
+      "id": "report--b1c2d3e4-5f6a-7b8c-9d0e-1f2a3b4c5d6e",
+      "created": "2025-07-29T00:00:00.000Z",
+      "modified": "2025-07-29T00:00:00.000Z",
+      "name": "CISA AA23-320A: Scattered Spider",
+      "description": "Joint Cybersecurity Advisory on Scattered Spider threat actors targeting commercial facilities sectors with sophisticated social engineering and ransomware attacks",
+      "published": "2025-07-29T00:00:00.000Z",
+      "report_types": ["threat-actor", "malware", "attack-pattern"],
+      "object_refs": [
+        "threat-actor--c1d2e3f4-5a6b-7c8d-9e0f-1a2b3c4d5e6f",
+        "malware--d1e2f3a4-5b6c-7d8e-9f0a-1b2c3d4e5f6a",
+        "malware--e1f2a3b4-5c6d-7e8f-9a0b-1c2d3e4f5a6b",
+        "malware--f1a2b3c4-5d6e-7f8a-9b0c-1d2e3f4a5b6c",
+        "malware--a1b2c3d4-5e6f-7a8b-9c0d-1e2f3a4b5c6d",
+        "malware--b1c2d3e4-5f6a-7b8c-9d0e-1f2a3b4c5d6e",
+        "indicator--c1d2e3f4-5a6b-7c8d-9e0f-1a2b3c4d5e6f",
+        "indicator--d1e2f3a4-5b6c-7d8e-9f0a-1b2c3d4e5f6a",
+        "indicator--e1f2a3b4-5c6d-7e8f-9a0b-1c2d3e4f5a6b",
+        "attack-pattern--f1a2b3c4-5d6e-7f8a-9b0c-1d2e3f4a5b6c",
+        "attack-pattern--a1b2c3d4-5e6f-7a8b-9c0d-1e2f3a4b5c6d",
+        "attack-pattern--b1c2d3e4-5f6a-7b8c-9d0e-1f2a3b4c5d6e"
+      ],
+      "object_marking_refs": ["marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"],
+      "external_references": [
+        {
+          "source_name": "CISA",
+          "description": "CISA Advisory AA23-320A",
+          "url": "https://www.cisa.gov/news-events/cybersecurity-advisories/aa23-320a"
+        }
+      ]
+    },
+    {
+      "type": "threat-actor",
+      "spec_version": "2.1",
+      "id": "threat-actor--c1d2e3f4-5a6b-7c8d-9e0f-1a2b3c4d5e6f",
+      "created": "2025-07-29T00:00:00.000Z",
+      "modified": "2025-07-29T00:00:00.000Z",
+      "name": "Scattered Spider",
+      "description": "Cybercriminal group that targets large companies and their contracted IT help desks using sophisticated social engineering techniques",
+      "aliases": ["UNC3944", "Scatter Swine", "Oktapus", "Octo Tempest", "Storm-0875", "Muddled Libra"],
+      "threat_actor_types": ["criminal"],
+      "roles": ["agent"],
+      "goals": ["Financial gain through data extortion and ransomware"],
+      "sophistication": "expert",
+      "resource_level": "organization",
+      "primary_motivation": "financial-gain"
+    },
+    {
+      "type": "malware",
+      "spec_version": "2.1",
+      "id": "malware--d1e2f3a4-5b6c-7d8e-9f0a-1b2c3d4e5f6a",
+      "created": "2025-07-29T00:00:00.000Z",
+      "modified": "2025-07-29T00:00:00.000Z",
+      "name": "AveMaria",
+      "aliases": ["WarZone"],
+      "description": "Remote access trojan used by Scattered Spider for persistent access",
+      "malware_types": ["remote-access-trojan"],
+      "is_family": true,
+      "external_references": [
+        {
+          "source_name": "mitre-attack",
+          "external_id": "S0670"
+        }
+      ]
+    },
+    {
+      "type": "malware",
+      "spec_version": "2.1",
+      "id": "malware--e1f2a3b4-5c6d-7e8f-9a0b-1c2d3e4f5a6b",
+      "created": "2025-07-29T00:00:00.000Z",
+      "modified": "2025-07-29T00:00:00.000Z",
+      "name": "Raccoon Stealer",
+      "description": "Information stealer that collects login credentials, browser history, cookies, and other data",
+      "malware_types": ["credential-stealer"],
+      "is_family": true,
+      "external_references": [
+        {
+          "source_name": "mitre-attack",
+          "external_id": "S1148"
+        }
+      ]
+    },
+    {
+      "type": "malware",
+      "spec_version": "2.1",
+      "id": "malware--f1a2b3c4-5d6e-7f8a-9b0c-1d2e3f4a5b6c",
+      "created": "2025-07-29T00:00:00.000Z",
+      "modified": "2025-07-29T00:00:00.000Z",
+      "name": "VIDAR Stealer",
+      "description": "Information stealer that collects login credentials, browser history, cookies, and other data",
+      "malware_types": ["credential-stealer"],
+      "is_family": true
+    },
+    {
+      "type": "malware",
+      "spec_version": "2.1",
+      "id": "malware--a1b2c3d4-5e6f-7a8b-9c0d-1e2f3a4b5c6d",
+      "created": "2025-07-29T00:00:00.000Z",
+      "modified": "2025-07-29T00:00:00.000Z",
+      "name": "RattyRAT",
+      "description": "Java-based remote access trojan used for persistent, stealth access and internal reconnaissance",
+      "malware_types": ["remote-access-trojan"],
+      "is_family": true
+    },
+    {
+      "type": "malware",
+      "spec_version": "2.1",
+      "id": "malware--b1c2d3e4-5f6a-7b8c-9d0e-1f2a3b4c5d6e",
+      "created": "2025-07-29T00:00:00.000Z",
+      "modified": "2025-07-29T00:00:00.000Z",
+      "name": "DragonForce Ransomware",
+      "description": "Ransomware that infiltrates networks, encrypts data including VMware ESXi servers, and demands ransom",
+      "malware_types": ["ransomware"],
+      "is_family": true
+    },
+    {
+      "type": "indicator",
+      "spec_version": "2.1",
+      "id": "indicator--c1d2e3f4-5a6b-7c8d-9e0f-1a2b3c4d5e6f",
+      "created": "2025-07-29T00:00:00.000Z",
+      "modified": "2025-07-29T00:00:00.000Z",
+      "name": "Scattered Spider Phishing Domains",
+      "description": "Domains used in phishing campaigns",
+      "pattern": "[domain-name:value = 'targetsname-sso.com' OR domain-name:value = 'targetsname-servicedesk.com' OR domain-name:value = 'targetsname-okta.com' OR domain-name:value = 'targetsname-cms.com' OR domain-name:value = 'targetsname-helpdesk.com']",
+      "pattern_type": "stix",
+      "valid_from": "2023-01-01T00:00:00.000Z",
+      "indicator_types": ["malicious-activity"]
+    },
+    {
+      "type": "indicator",
+      "spec_version": "2.1",
+      "id": "indicator--d1e2f3a4-5b6c-7d8e-9f0a-1b2c3d4e5f6a",
+      "created": "2025-07-29T00:00:00.000Z",
+      "modified": "2025-07-29T00:00:00.000Z",
+      "name": "Oktalogin Phishing Pattern",
+      "description": "Phishing domain pattern used by Scattered Spider",
+      "pattern": "[domain-name:value MATCHES 'oktalogin-.*\\.com']",
+      "pattern_type": "stix",
+      "valid_from": "2025-01-01T00:00:00.000Z",
+      "indicator_types": ["malicious-activity"]
+    },
+    {
+      "type": "indicator",
+      "spec_version": "2.1",
+      "id": "indicator--e1f2a3b4-5c6d-7e8f-9a0b-1c2d3e4f5a6b",
+      "created": "2025-07-29T00:00:00.000Z",
+      "modified": "2025-07-29T00:00:00.000Z",
+      "name": "Data Exfiltration to MEGA",
+      "description": "Exfiltration to MEGA cloud storage",
+      "pattern": "[network-traffic:dst_ref.value = 'mega.nz']",
+      "pattern_type": "stix",
+      "valid_from": "2025-01-01T00:00:00.000Z",
+      "indicator_types": ["malicious-activity"]
+    },
+    {
+      "type": "attack-pattern",
+      "spec_version": "2.1",
+      "id": "attack-pattern--f1a2b3c4-5d6e-7f8a-9b0c-1d2e3f4a5b6c",
+      "created": "2025-07-29T00:00:00.000Z",
+      "modified": "2025-07-29T00:00:00.000Z",
+      "name": "Phishing for Information",
+      "description": "Scattered Spider uses phishing to obtain login credentials",
+      "external_references": [
+        {
+          "source_name": "mitre-attack",
+          "external_id": "T1598",
+          "url": "https://attack.mitre.org/techniques/T1598"
+        }
+      ]
+    },
+    {
+      "type": "attack-pattern",
+      "spec_version": "2.1",
+      "id": "attack-pattern--a1b2c3d4-5e6f-7a8b-9c0d-1e2f3a4b5c6d",
+      "created": "2025-07-29T00:00:00.000Z",
+      "modified": "2025-07-29T00:00:00.000Z",
+      "name": "Impersonation",
+      "description": "Threat actors pose as IT/helpdesk staff to gain access",
+      "external_references": [
+        {
+          "source_name": "mitre-attack",
+          "external_id": "T1656",
+          "url": "https://attack.mitre.org/techniques/T1656"
+        }
+      ]
+    },
+    {
+      "type": "attack-pattern",
+      "spec_version": "2.1",
+      "id": "attack-pattern--b1c2d3e4-5f6a-7b8c-9d0e-1f2a3b4c5d6e",
+      "created": "2025-07-29T00:00:00.000Z",
+      "modified": "2025-07-29T00:00:00.000Z",
+      "name": "Multi-Factor Authentication Request Generation",
+      "description": "MFA fatigue attacks through repeated authentication prompts",
+      "external_references": [
+        {
+          "source_name": "mitre-attack",
+          "external_id": "T1621",
+          "url": "https://attack.mitre.org/techniques/T1621"
+        }
+      ]
+    },
+    {
+      "type": "attack-pattern",
+      "spec_version": "2.1",
+      "id": "attack-pattern--c1e2f3a4-5b6c-7d8e-9f0a-1b2c3d4e5f6a",
+      "created": "2025-07-29T00:00:00.000Z",
+      "modified": "2025-07-29T00:00:00.000Z",
+      "name": "Data Encrypted for Impact",
+      "description": "Ransomware encryption including VMware ESXi servers",
+      "external_references": [
+        {
+          "source_name": "mitre-attack",
+          "external_id": "T1486",
+          "url": "https://attack.mitre.org/techniques/T1486"
+        }
+      ]
+    },
+    {
+      "type": "attack-pattern",
+      "spec_version": "2.1",
+      "id": "attack-pattern--d1f2a3b4-5c6d-7e8f-9a0b-1c2d3e4f5a6b",
+      "created": "2025-07-29T00:00:00.000Z",
+      "modified": "2025-07-29T00:00:00.000Z",
+      "name": "Remote Access Software",
+      "description": "Using legitimate remote access tools for command and control",
+      "external_references": [
+        {
+          "source_name": "mitre-attack",
+          "external_id": "T1219",
+          "url": "https://attack.mitre.org/techniques/T1219"
+        }
+      ]
+    },
+    {
+      "type": "course-of-action",
+      "spec_version": "2.1",
+      "id": "course-of-action--e1a2b3c4-5d6f-7a8b-9c0d-1e2f3a4b5c6d",
+      "created": "2025-07-29T00:00:00.000Z",
+      "modified": "2025-07-29T00:00:00.000Z",
+      "name": "Implement Phishing-Resistant MFA",
+      "description": "Deploy FIDO/WebAuthn authentication or PKI-based MFA resistant to phishing, push bombing, and SIM swap attacks"
+    },
+    {
+      "type": "course-of-action",
+      "spec_version": "2.1",
+      "id": "course-of-action--f1b2c3d4-5e6a-7b8c-9d0e-1f2a3b4c5d6e",
+      "created": "2025-07-29T00:00:00.000Z",
+      "modified": "2025-07-29T00:00:00.000Z",
+      "name": "Application Control Implementation",
+      "description": "Implement application controls to manage software execution, including allowlisting remote access programs and preventing unauthorized portable executables"
+    },
+    {
+      "type": "course-of-action",
+      "spec_version": "2.1",
+      "id": "course-of-action--a1c2d3e4-5f6a-7b8c-9d0e-1f2a3b4c5d6e",
+      "created": "2025-07-29T00:00:00.000Z",
+      "modified": "2025-07-29T00:00:00.000Z",
+      "name": "Maintain Offline Backups",
+      "description": "Maintain offline backups of data stored separately from source systems and test restoration regularly"
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--b1d2e3f4-5a6b-7c8d-9e0f-1a2b3c4d5e6f",
+      "created": "2025-07-29T00:00:00.000Z",
+      "modified": "2025-07-29T00:00:00.000Z",
+      "relationship_type": "uses",
+      "source_ref": "threat-actor--c1d2e3f4-5a6b-7c8d-9e0f-1a2b3c4d5e6f",
+      "target_ref": "malware--d1e2f3a4-5b6c-7d8e-9f0a-1b2c3d4e5f6a"
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--c1e2f3a4-5b6c-7d8e-9f0a-1b2c3d4e5f6a",
+      "created": "2025-07-29T00:00:00.000Z",
+      "modified": "2025-07-29T00:00:00.000Z",
+      "relationship_type": "uses",
+      "source_ref": "threat-actor--c1d2e3f4-5a6b-7c8d-9e0f-1a2b3c4d5e6f",
+      "target_ref": "malware--b1c2d3e4-5f6a-7b8c-9d0e-1f2a3b4c5d6e"
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--d1f2a3b4-5c6d-7e8f-9a0b-1c2d3e4f5a6b",
+      "created": "2025-07-29T00:00:00.000Z",
+      "modified": "2025-07-29T00:00:00.000Z",
+      "relationship_type": "uses",
+      "source_ref": "threat-actor--c1d2e3f4-5a6b-7c8d-9e0f-1a2b3c4d5e6f",
+      "target_ref": "attack-pattern--f1a2b3c4-5d6e-7f8a-9b0c-1d2e3f4a5b6c"
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--e1a2b3c4-5d6f-7a8b-9c0d-1e2f3a4b5c6d",
+      "created": "2025-07-29T00:00:00.000Z",
+      "modified": "2025-07-29T00:00:00.000Z",
+      "relationship_type": "indicates",
+      "source_ref": "indicator--c1d2e3f4-5a6b-7c8d-9e0f-1a2b3c4d5e6f",
+      "target_ref": "threat-actor--c1d2e3f4-5a6b-7c8d-9e0f-1a2b3c4d5e6f"
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--f1b2c3d4-5e6a-7b8c-9d0e-1f2a3b4c5d6e",
+      "created": "2025-07-29T00:00:00.000Z",
+      "modified": "2025-07-29T00:00:00.000Z",
+      "relationship_type": "mitigates",
+      "source_ref": "course-of-action--e1a2b3c4-5d6f-7a8b-9c0d-1e2f3a4b5c6d",
+      "target_ref": "attack-pattern--b1c2d3e4-5f6a-7b8c-9d0e-1f2a3b4c5d6e"
+    },
+    {
+      "type": "identity",
+      "spec_version": "2.1",
+      "id": "identity--a1b2c3d4-5e6f-7a8b-9c0d-1e2f3a4b5c6d",
+      "created": "2025-07-29T00:00:00.000Z",
+      "modified": "2025-07-29T00:00:00.000Z",
+      "name": "Commercial Facilities Sector",
+      "identity_class": "class",
+      "sectors": ["commercial-facilities"]
+    },
+    {
+      "type": "marking-definition",
+      "spec_version": "2.1",
+      "id": "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487",
+      "created": "2017-01-20T00:00:00.000Z",
+      "definition_type": "tlp",
+      "name": "TLP:CLEAR",
+      "definition": {
+        "tlp": "clear"
+      }
+    }
+  ]
+}
