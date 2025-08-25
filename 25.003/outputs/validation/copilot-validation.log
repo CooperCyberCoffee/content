@@ -1,0 +1,205 @@
+[-] Results for: copilot-output.json
+[X] STIX JSON: Invalid
+    [!] Warning: bundle--9f1c3de4-2a4b-4a12-8f0d-6e5c3b2a1d4f: {401} Custom property 'spec_version' should be implemented using an extension with an 'extension_type' of 'property-extension' or 'toplevel-property-extension'.
+    [!] Warning: malware--e4f5a6b7-9c8d-4e7f-c3b4-6f7890346666: {103} Given ID value malware--e4f5a6b7-9c8d-4e7f-c3b4-6f7890346666 is not a valid UUIDv4 ID.
+    [!] Warning: tool--6c2f7b98-8f4e-5d9d-0c22-abf0126e2222: {103} Given ID value tool--6c2f7b98-8f4e-5d9d-0c22-abf0126e2222 is not a valid UUIDv4 ID.
+    [!] Warning: tool--7d3f4e0b-9e5a-6f0c-1d33-bc0112373333: {103} Given ID value tool--7d3f4e0b-9e5a-6f0c-1d33-bc0112373333 is not a valid UUIDv4 ID.
+    [!] Warning: attack-pattern--fa1b2c3d-4e5f-6789-abcd-ef0123456789: {103} Given ID value attack-pattern--fa1b2c3d-4e5f-6789-abcd-ef0123456789 is not a valid UUIDv4 ID.
+    [!] Warning: attack-pattern--0f1a2b3c-4d5e-6f78-9abc-def012345678: {103} Given ID value attack-pattern--0f1a2b3c-4d5e-6f78-9abc-def012345678 is not a valid UUIDv4 ID.
+    [!] Warning: attack-pattern--1a2b3c4d-5e6f-7890-abcd-ef0123456790: {103} Given ID value attack-pattern--1a2b3c4d-5e6f-7890-abcd-ef0123456790 is not a valid UUIDv4 ID.
+    [!] Warning: attack-pattern--2b3c4d5e-6f7a-8901-bcde-f01234567901: {103} Given ID value attack-pattern--2b3c4d5e-6f7a-8901-bcde-f01234567901 is not a valid UUIDv4 ID.
+    [!] Warning: indicator--3c4d5e6f-7a8b-9012-cdef-012345679012: {103} Given ID value indicator--3c4d5e6f-7a8b-9012-cdef-012345679012 is not a valid UUIDv4 ID.
+    [!] Warning: indicator--3c4d5e6f-7a8b-9012-cdef-012345679012: {303} Both the name and description properties SHOULD be present.
+    [!] Warning: indicator--4d5e6f7a-8b9c-0123-def0-123456790123: {103} Given ID value indicator--4d5e6f7a-8b9c-0123-def0-123456790123 is not a valid UUIDv4 ID.
+    [!] Warning: indicator--4d5e6f7a-8b9c-0123-def0-123456790123: {303} Both the name and description properties SHOULD be present.
+    [!] Warning: indicator--5e6f7a8b-9c0d-1234-ef01-234567901234: {103} Given ID value indicator--5e6f7a8b-9c0d-1234-ef01-234567901234 is not a valid UUIDv4 ID.
+    [!] Warning: indicator--5e6f7a8b-9c0d-1234-ef01-234567901234: {303} Both the name and description properties SHOULD be present.
+    [!] Warning: indicator--6f7a8b9c-0d1e-2345-f012-345679012345: {103} Given ID value indicator--6f7a8b9c-0d1e-2345-f012-345679012345 is not a valid UUIDv4 ID.
+    [!] Warning: indicator--6f7a8b9c-0d1e-2345-f012-345679012345: {303} Both the name and description properties SHOULD be present.
+    [!] Warning: indicator--7a8b9c0d-1e2f-3456-0123-456790123456: {103} Given ID value indicator--7a8b9c0d-1e2f-3456-0123-456790123456 is not a valid UUIDv4 ID.
+    [!] Warning: indicator--7a8b9c0d-1e2f-3456-0123-456790123456: {303} Both the name and description properties SHOULD be present.
+    [!] Warning: indicator--8b9c0d1e-2f3a-4567-1234-567901234567: {103} Given ID value indicator--8b9c0d1e-2f3a-4567-1234-567901234567 is not a valid UUIDv4 ID.
+    [!] Warning: indicator--8b9c0d1e-2f3a-4567-1234-567901234567: {303} Both the name and description properties SHOULD be present.
+    [!] Warning: course-of-action--9c0d1e2f-3a4b-5678-2345-678901234568: {103} Given ID value course-of-action--9c0d1e2f-3a4b-5678-2345-678901234568 is not a valid UUIDv4 ID.
+    [!] Warning: course-of-action--0d1e2f3a-4b5c-6789-3456-789012345679: {103} Given ID value course-of-action--0d1e2f3a-4b5c-6789-3456-789012345679 is not a valid UUIDv4 ID.
+    [!] Warning: course-of-action--1e2f3a4b-5c6d-7890-4567-890123456780: {103} Given ID value course-of-action--1e2f3a4b-5c6d-7890-4567-890123456780 is not a valid UUIDv4 ID.
+    [X] intrusion-set--883f4b2e-5f7a-4a1c-a7cf-39fa1ae2d111: 'spec_version' is a required property
+    [X] intrusion-set--883f4b2e-5f7a-4a1c-a7cf-39fa1ae2d111: 'created' is a required property
+    [X] intrusion-set--883f4b2e-5f7a-4a1c-a7cf-39fa1ae2d111: 'modified' is a required property
+    [X] malware--aadf8867-8b2d-4d26-bda2-89cfc57c2222: 'spec_version' is a required property
+    [X] malware--aadf8867-8b2d-4d26-bda2-89cfc57c2222: 'created' is a required property
+    [X] malware--aadf8867-8b2d-4d26-bda2-89cfc57c2222: 'modified' is a required property
+    [X] malware--aadf8867-8b2d-4d26-bda2-89cfc57c2222: 'is_family' is a required property
+    [X] malware--aadf8867-8b2d-4d26-bda2-89cfc57c2222: {'type': 'malware', 'id': 'malware--aadf8867-8b2d-4d26-bda2-89cfc57c2222', 'name': 'AveMaria', 'description': "Remote access trojan enabling access to targeted organization's systems."} is valid under each of {'properties': {'is_family': {'type': 'boolean', 'enum': [True], 'description': 'Whether the object represents a malware family (if true) or a malware instance (if false).'}}, 'required': ['name']}, {'properties': {'is_family': {'type': 'boolean', 'enum': [False], 'description': 'Whether the object represents a malware family (if true) or a malware instance (if false).'}}}
+    [X] malware--b1e4f2c3-6a8e-4e5d-9bfb-3e0108743333: 'spec_version' is a required property
+    [X] malware--b1e4f2c3-6a8e-4e5d-9bfb-3e0108743333: 'created' is a required property
+    [X] malware--b1e4f2c3-6a8e-4e5d-9bfb-3e0108743333: 'modified' is a required property
+    [X] malware--b1e4f2c3-6a8e-4e5d-9bfb-3e0108743333: 'is_family' is a required property
+    [X] malware--b1e4f2c3-6a8e-4e5d-9bfb-3e0108743333: {'type': 'malware', 'id': 'malware--b1e4f2c3-6a8e-4e5d-9bfb-3e0108743333', 'name': 'Raccoon Stealer', 'description': 'Information stealer that collects credentials, browser history, cookies, and other data.'} is valid under each of {'properties': {'is_family': {'type': 'boolean', 'enum': [True], 'description': 'Whether the object represents a malware family (if true) or a malware instance (if false).'}}, 'required': ['name']}, {'properties': {'is_family': {'type': 'boolean', 'enum': [False], 'description': 'Whether the object represents a malware family (if true) or a malware instance (if false).'}}}
+    [X] malware--c2d3f4e5-7b8a-4c9d-ab1c-4d5678124444: 'spec_version' is a required property
+    [X] malware--c2d3f4e5-7b8a-4c9d-ab1c-4d5678124444: 'created' is a required property
+    [X] malware--c2d3f4e5-7b8a-4c9d-ab1c-4d5678124444: 'modified' is a required property
+    [X] malware--c2d3f4e5-7b8a-4c9d-ab1c-4d5678124444: 'is_family' is a required property
+    [X] malware--c2d3f4e5-7b8a-4c9d-ab1c-4d5678124444: {'type': 'malware', 'id': 'malware--c2d3f4e5-7b8a-4c9d-ab1c-4d5678124444', 'name': 'VIDAR Stealer', 'description': 'Information stealer that collects credentials, browser history, cookies, and other data.'} is valid under each of {'properties': {'is_family': {'type': 'boolean', 'enum': [True], 'description': 'Whether the object represents a malware family (if true) or a malware instance (if false).'}}, 'required': ['name']}, {'properties': {'is_family': {'type': 'boolean', 'enum': [False], 'description': 'Whether the object represents a malware family (if true) or a malware instance (if false).'}}}
+    [X] malware--d3c4e5f6-8a9b-4d8c-b2a3-5e6789235555: 'spec_version' is a required property
+    [X] malware--d3c4e5f6-8a9b-4d8c-b2a3-5e6789235555: 'created' is a required property
+    [X] malware--d3c4e5f6-8a9b-4d8c-b2a3-5e6789235555: 'modified' is a required property
+    [X] malware--d3c4e5f6-8a9b-4d8c-b2a3-5e6789235555: 'is_family' is a required property
+    [X] malware--d3c4e5f6-8a9b-4d8c-b2a3-5e6789235555: {'type': 'malware', 'id': 'malware--d3c4e5f6-8a9b-4d8c-b2a3-5e6789235555', 'name': 'RattyRAT', 'description': 'Java-based remote access trojan used for persistent, stealth access and internal reconnaissance.'} is valid under each of {'properties': {'is_family': {'type': 'boolean', 'enum': [True], 'description': 'Whether the object represents a malware family (if true) or a malware instance (if false).'}}, 'required': ['name']}, {'properties': {'is_family': {'type': 'boolean', 'enum': [False], 'description': 'Whether the object represents a malware family (if true) or a malware instance (if false).'}}}
+    [X] malware--e4f5a6b7-9c8d-4e7f-c3b4-6f7890346666: id: 'malware--e4f5a6b7-9c8d-4e7f-c3b4-6f7890346666' does not match the id format ([object-type]--[UUID])
+    [X] malware--e4f5a6b7-9c8d-4e7f-c3b4-6f7890346666: 'spec_version' is a required property
+    [X] malware--e4f5a6b7-9c8d-4e7f-c3b4-6f7890346666: 'created' is a required property
+    [X] malware--e4f5a6b7-9c8d-4e7f-c3b4-6f7890346666: 'modified' is a required property
+    [X] malware--e4f5a6b7-9c8d-4e7f-c3b4-6f7890346666: 'is_family' is a required property
+    [X] malware--e4f5a6b7-9c8d-4e7f-c3b4-6f7890346666: {'type': 'malware', 'id': 'malware--e4f5a6b7-9c8d-4e7f-c3b4-6f7890346666', 'name': 'DragonForce Ransomware', 'description': 'Ransomware that encrypts data on targeted networks and demands ransom.'} is valid under each of {'properties': {'is_family': {'type': 'boolean', 'enum': [True], 'description': 'Whether the object represents a malware family (if true) or a malware instance (if false).'}}, 'required': ['name']}, {'properties': {'is_family': {'type': 'boolean', 'enum': [False], 'description': 'Whether the object represents a malware family (if true) or a malware instance (if false).'}}}
+    [X] tool--5b1e6a97-7e3d-4c8c-9b11-9aef8d5d1111: 'spec_version' is a required property
+    [X] tool--5b1e6a97-7e3d-4c8c-9b11-9aef8d5d1111: 'created' is a required property
+    [X] tool--5b1e6a97-7e3d-4c8c-9b11-9aef8d5d1111: 'modified' is a required property
+    [X] tool--6c2f7b98-8f4e-5d9d-0c22-abf0126e2222: id: 'tool--6c2f7b98-8f4e-5d9d-0c22-abf0126e2222' does not match the id format ([object-type]--[UUID])
+    [X] tool--6c2f7b98-8f4e-5d9d-0c22-abf0126e2222: 'spec_version' is a required property
+    [X] tool--6c2f7b98-8f4e-5d9d-0c22-abf0126e2222: 'created' is a required property
+    [X] tool--6c2f7b98-8f4e-5d9d-0c22-abf0126e2222: 'modified' is a required property
+    [X] tool--7d3f4e0b-9e5a-6f0c-1d33-bc0112373333: id: 'tool--7d3f4e0b-9e5a-6f0c-1d33-bc0112373333' does not match the id format ([object-type]--[UUID])
+    [X] tool--7d3f4e0b-9e5a-6f0c-1d33-bc0112373333: 'spec_version' is a required property
+    [X] tool--7d3f4e0b-9e5a-6f0c-1d33-bc0112373333: 'created' is a required property
+    [X] tool--7d3f4e0b-9e5a-6f0c-1d33-bc0112373333: 'modified' is a required property
+    [X] attack-pattern--fa1b2c3d-4e5f-6789-abcd-ef0123456789: id: 'attack-pattern--fa1b2c3d-4e5f-6789-abcd-ef0123456789' does not match the id format ([object-type]--[UUID])
+    [X] attack-pattern--fa1b2c3d-4e5f-6789-abcd-ef0123456789: 'spec_version' is a required property
+    [X] attack-pattern--fa1b2c3d-4e5f-6789-abcd-ef0123456789: 'created' is a required property
+    [X] attack-pattern--fa1b2c3d-4e5f-6789-abcd-ef0123456789: 'modified' is a required property
+    [X] attack-pattern--0f1a2b3c-4d5e-6f78-9abc-def012345678: id: 'attack-pattern--0f1a2b3c-4d5e-6f78-9abc-def012345678' does not match the id format ([object-type]--[UUID])
+    [X] attack-pattern--0f1a2b3c-4d5e-6f78-9abc-def012345678: 'spec_version' is a required property
+    [X] attack-pattern--0f1a2b3c-4d5e-6f78-9abc-def012345678: 'created' is a required property
+    [X] attack-pattern--0f1a2b3c-4d5e-6f78-9abc-def012345678: 'modified' is a required property
+    [X] attack-pattern--1a2b3c4d-5e6f-7890-abcd-ef0123456790: id: 'attack-pattern--1a2b3c4d-5e6f-7890-abcd-ef0123456790' does not match the id format ([object-type]--[UUID])
+    [X] attack-pattern--1a2b3c4d-5e6f-7890-abcd-ef0123456790: 'spec_version' is a required property
+    [X] attack-pattern--1a2b3c4d-5e6f-7890-abcd-ef0123456790: 'created' is a required property
+    [X] attack-pattern--1a2b3c4d-5e6f-7890-abcd-ef0123456790: 'modified' is a required property
+    [X] attack-pattern--2b3c4d5e-6f7a-8901-bcde-f01234567901: id: 'attack-pattern--2b3c4d5e-6f7a-8901-bcde-f01234567901' does not match the id format ([object-type]--[UUID])
+    [X] attack-pattern--2b3c4d5e-6f7a-8901-bcde-f01234567901: 'spec_version' is a required property
+    [X] attack-pattern--2b3c4d5e-6f7a-8901-bcde-f01234567901: 'created' is a required property
+    [X] attack-pattern--2b3c4d5e-6f7a-8901-bcde-f01234567901: 'modified' is a required property
+    [X] indicator--3c4d5e6f-7a8b-9012-cdef-012345679012: id: 'indicator--3c4d5e6f-7a8b-9012-cdef-012345679012' does not match the id format ([object-type]--[UUID])
+    [X] indicator--3c4d5e6f-7a8b-9012-cdef-012345679012: 'spec_version' is a required property
+    [X] indicator--3c4d5e6f-7a8b-9012-cdef-012345679012: 'created' is a required property
+    [X] indicator--3c4d5e6f-7a8b-9012-cdef-012345679012: 'modified' is a required property
+    [X] indicator--3c4d5e6f-7a8b-9012-cdef-012345679012: 'valid_from' is a required property
+    [X] indicator--4d5e6f7a-8b9c-0123-def0-123456790123: id: 'indicator--4d5e6f7a-8b9c-0123-def0-123456790123' does not match the id format ([object-type]--[UUID])
+    [X] indicator--4d5e6f7a-8b9c-0123-def0-123456790123: 'spec_version' is a required property
+    [X] indicator--4d5e6f7a-8b9c-0123-def0-123456790123: 'created' is a required property
+    [X] indicator--4d5e6f7a-8b9c-0123-def0-123456790123: 'modified' is a required property
+    [X] indicator--4d5e6f7a-8b9c-0123-def0-123456790123: 'valid_from' is a required property
+    [X] indicator--5e6f7a8b-9c0d-1234-ef01-234567901234: id: 'indicator--5e6f7a8b-9c0d-1234-ef01-234567901234' does not match the id format ([object-type]--[UUID])
+    [X] indicator--5e6f7a8b-9c0d-1234-ef01-234567901234: 'spec_version' is a required property
+    [X] indicator--5e6f7a8b-9c0d-1234-ef01-234567901234: 'created' is a required property
+    [X] indicator--5e6f7a8b-9c0d-1234-ef01-234567901234: 'modified' is a required property
+    [X] indicator--5e6f7a8b-9c0d-1234-ef01-234567901234: 'valid_from' is a required property
+    [X] indicator--6f7a8b9c-0d1e-2345-f012-345679012345: id: 'indicator--6f7a8b9c-0d1e-2345-f012-345679012345' does not match the id format ([object-type]--[UUID])
+    [X] indicator--6f7a8b9c-0d1e-2345-f012-345679012345: 'spec_version' is a required property
+    [X] indicator--6f7a8b9c-0d1e-2345-f012-345679012345: 'created' is a required property
+    [X] indicator--6f7a8b9c-0d1e-2345-f012-345679012345: 'modified' is a required property
+    [X] indicator--6f7a8b9c-0d1e-2345-f012-345679012345: 'valid_from' is a required property
+    [X] indicator--7a8b9c0d-1e2f-3456-0123-456790123456: id: 'indicator--7a8b9c0d-1e2f-3456-0123-456790123456' does not match the id format ([object-type]--[UUID])
+    [X] indicator--7a8b9c0d-1e2f-3456-0123-456790123456: 'spec_version' is a required property
+    [X] indicator--7a8b9c0d-1e2f-3456-0123-456790123456: 'created' is a required property
+    [X] indicator--7a8b9c0d-1e2f-3456-0123-456790123456: 'modified' is a required property
+    [X] indicator--7a8b9c0d-1e2f-3456-0123-456790123456: 'valid_from' is a required property
+    [X] indicator--8b9c0d1e-2f3a-4567-1234-567901234567: id: 'indicator--8b9c0d1e-2f3a-4567-1234-567901234567' does not match the id format ([object-type]--[UUID])
+    [X] indicator--8b9c0d1e-2f3a-4567-1234-567901234567: 'spec_version' is a required property
+    [X] indicator--8b9c0d1e-2f3a-4567-1234-567901234567: 'created' is a required property
+    [X] indicator--8b9c0d1e-2f3a-4567-1234-567901234567: 'modified' is a required property
+    [X] indicator--8b9c0d1e-2f3a-4567-1234-567901234567: 'valid_from' is a required property
+    [X] course-of-action--9c0d1e2f-3a4b-5678-2345-678901234568: id: 'course-of-action--9c0d1e2f-3a4b-5678-2345-678901234568' does not match the id format ([object-type]--[UUID])
+    [X] course-of-action--9c0d1e2f-3a4b-5678-2345-678901234568: 'spec_version' is a required property
+    [X] course-of-action--9c0d1e2f-3a4b-5678-2345-678901234568: 'created' is a required property
+    [X] course-of-action--9c0d1e2f-3a4b-5678-2345-678901234568: 'modified' is a required property
+    [X] course-of-action--0d1e2f3a-4b5c-6789-3456-789012345679: id: 'course-of-action--0d1e2f3a-4b5c-6789-3456-789012345679' does not match the id format ([object-type]--[UUID])
+    [X] course-of-action--0d1e2f3a-4b5c-6789-3456-789012345679: 'spec_version' is a required property
+    [X] course-of-action--0d1e2f3a-4b5c-6789-3456-789012345679: 'created' is a required property
+    [X] course-of-action--0d1e2f3a-4b5c-6789-3456-789012345679: 'modified' is a required property
+    [X] course-of-action--1e2f3a4b-5c6d-7890-4567-890123456780: id: 'course-of-action--1e2f3a4b-5c6d-7890-4567-890123456780' does not match the id format ([object-type]--[UUID])
+    [X] course-of-action--1e2f3a4b-5c6d-7890-4567-890123456780: 'spec_version' is a required property
+    [X] course-of-action--1e2f3a4b-5c6d-7890-4567-890123456780: 'created' is a required property
+    [X] course-of-action--1e2f3a4b-5c6d-7890-4567-890123456780: 'modified' is a required property
+    [X] relationship--11111111-aaaa-4bbb-8ccc-dddd11112222: 'spec_version' is a required property
+    [X] relationship--11111111-aaaa-4bbb-8ccc-dddd11112222: 'created' is a required property
+    [X] relationship--11111111-aaaa-4bbb-8ccc-dddd11112222: 'modified' is a required property
+    [X] relationship--22222222-bbbb-4ccc-8ddd-eeee22223333: 'spec_version' is a required property
+    [X] relationship--22222222-bbbb-4ccc-8ddd-eeee22223333: 'created' is a required property
+    [X] relationship--22222222-bbbb-4ccc-8ddd-eeee22223333: 'modified' is a required property
+    [X] relationship--33333333-cccc-4ddd-8eee-ffff33334444: 'spec_version' is a required property
+    [X] relationship--33333333-cccc-4ddd-8eee-ffff33334444: 'created' is a required property
+    [X] relationship--33333333-cccc-4ddd-8eee-ffff33334444: 'modified' is a required property
+    [X] relationship--44444444-dddd-4eee-8fff-000044445555: 'spec_version' is a required property
+    [X] relationship--44444444-dddd-4eee-8fff-000044445555: 'created' is a required property
+    [X] relationship--44444444-dddd-4eee-8fff-000044445555: 'modified' is a required property
+    [X] relationship--55555555-eeee-4fff-8000-111155556666: 'spec_version' is a required property
+    [X] relationship--55555555-eeee-4fff-8000-111155556666: 'created' is a required property
+    [X] relationship--55555555-eeee-4fff-8000-111155556666: 'modified' is a required property
+    [X] relationship--55555555-eeee-4fff-8000-111155556666: target_ref: 'malware--e4f5a6b7-9c8d-4e7f-c3b4-6f7890346666' does not match the id format ([object-type]--[UUID])
+    [X] relationship--66666666-ffff-40aa-8111-222266667777: 'spec_version' is a required property
+    [X] relationship--66666666-ffff-40aa-8111-222266667777: 'created' is a required property
+    [X] relationship--66666666-ffff-40aa-8111-222266667777: 'modified' is a required property
+    [X] relationship--77777777-aaaa-412b-8222-333377778888: 'spec_version' is a required property
+    [X] relationship--77777777-aaaa-412b-8222-333377778888: 'created' is a required property
+    [X] relationship--77777777-aaaa-412b-8222-333377778888: 'modified' is a required property
+    [X] relationship--77777777-aaaa-412b-8222-333377778888: target_ref: 'tool--6c2f7b98-8f4e-5d9d-0c22-abf0126e2222' does not match the id format ([object-type]--[UUID])
+    [X] relationship--88888888-bbbb-423c-8333-444488889999: 'spec_version' is a required property
+    [X] relationship--88888888-bbbb-423c-8333-444488889999: 'created' is a required property
+    [X] relationship--88888888-bbbb-423c-8333-444488889999: 'modified' is a required property
+    [X] relationship--88888888-bbbb-423c-8333-444488889999: target_ref: 'tool--7d3f4e0b-9e5a-6f0c-1d33-bc0112373333' does not match the id format ([object-type]--[UUID])
+    [X] relationship--99999999-cccc-434d-8444-555599990000: 'spec_version' is a required property
+    [X] relationship--99999999-cccc-434d-8444-555599990000: 'created' is a required property
+    [X] relationship--99999999-cccc-434d-8444-555599990000: 'modified' is a required property
+    [X] relationship--99999999-cccc-434d-8444-555599990000: target_ref: 'attack-pattern--fa1b2c3d-4e5f-6789-abcd-ef0123456789' does not match the id format ([object-type]--[UUID])
+    [X] relationship--aaaaaaaa-dddd-445e-8555-6666aaaa1111: 'spec_version' is a required property
+    [X] relationship--aaaaaaaa-dddd-445e-8555-6666aaaa1111: 'created' is a required property
+    [X] relationship--aaaaaaaa-dddd-445e-8555-6666aaaa1111: 'modified' is a required property
+    [X] relationship--aaaaaaaa-dddd-445e-8555-6666aaaa1111: target_ref: 'attack-pattern--0f1a2b3c-4d5e-6f78-9abc-def012345678' does not match the id format ([object-type]--[UUID])
+    [X] relationship--bbbbbbbb-eeee-456f-8666-7777bbbb2222: 'spec_version' is a required property
+    [X] relationship--bbbbbbbb-eeee-456f-8666-7777bbbb2222: 'created' is a required property
+    [X] relationship--bbbbbbbb-eeee-456f-8666-7777bbbb2222: 'modified' is a required property
+    [X] relationship--bbbbbbbb-eeee-456f-8666-7777bbbb2222: target_ref: 'attack-pattern--1a2b3c4d-5e6f-7890-abcd-ef0123456790' does not match the id format ([object-type]--[UUID])
+    [X] relationship--cccccccc-ffff-4670-8777-8888cccc3333: 'spec_version' is a required property
+    [X] relationship--cccccccc-ffff-4670-8777-8888cccc3333: 'created' is a required property
+    [X] relationship--cccccccc-ffff-4670-8777-8888cccc3333: 'modified' is a required property
+    [X] relationship--cccccccc-ffff-4670-8777-8888cccc3333: target_ref: 'attack-pattern--2b3c4d5e-6f7a-8901-bcde-f01234567901' does not match the id format ([object-type]--[UUID])
+    [X] relationship--dddddddd-0000-4781-8888-9999dddd4444: 'spec_version' is a required property
+    [X] relationship--dddddddd-0000-4781-8888-9999dddd4444: 'created' is a required property
+    [X] relationship--dddddddd-0000-4781-8888-9999dddd4444: 'modified' is a required property
+    [X] relationship--dddddddd-0000-4781-8888-9999dddd4444: source_ref: 'indicator--3c4d5e6f-7a8b-9012-cdef-012345679012' does not match the id format ([object-type]--[UUID])
+    [X] relationship--eeeeeeee-1111-4892-8999-0000eeee5555: 'spec_version' is a required property
+    [X] relationship--eeeeeeee-1111-4892-8999-0000eeee5555: 'created' is a required property
+    [X] relationship--eeeeeeee-1111-4892-8999-0000eeee5555: 'modified' is a required property
+    [X] relationship--eeeeeeee-1111-4892-8999-0000eeee5555: source_ref: 'indicator--4d5e6f7a-8b9c-0123-def0-123456790123' does not match the id format ([object-type]--[UUID])
+    [X] relationship--ffffffff-2222-49a3-8aaa-1111ffff6666: 'spec_version' is a required property
+    [X] relationship--ffffffff-2222-49a3-8aaa-1111ffff6666: 'created' is a required property
+    [X] relationship--ffffffff-2222-49a3-8aaa-1111ffff6666: 'modified' is a required property
+    [X] relationship--ffffffff-2222-49a3-8aaa-1111ffff6666: source_ref: 'indicator--5e6f7a8b-9c0d-1234-ef01-234567901234' does not match the id format ([object-type]--[UUID])
+    [X] relationship--00000000-3333-4ab4-8bbb-222200007777: 'spec_version' is a required property
+    [X] relationship--00000000-3333-4ab4-8bbb-222200007777: 'created' is a required property
+    [X] relationship--00000000-3333-4ab4-8bbb-222200007777: 'modified' is a required property
+    [X] relationship--00000000-3333-4ab4-8bbb-222200007777: source_ref: 'indicator--6f7a8b9c-0d1e-2345-f012-345679012345' does not match the id format ([object-type]--[UUID])
+    [X] relationship--11111111-4444-4bc5-8ccc-333311118888: 'spec_version' is a required property
+    [X] relationship--11111111-4444-4bc5-8ccc-333311118888: 'created' is a required property
+    [X] relationship--11111111-4444-4bc5-8ccc-333311118888: 'modified' is a required property
+    [X] relationship--11111111-4444-4bc5-8ccc-333311118888: source_ref: 'indicator--7a8b9c0d-1e2f-3456-0123-456790123456' does not match the id format ([object-type]--[UUID])
+    [X] relationship--22222222-5555-4cd6-8ddd-444422229999: 'spec_version' is a required property
+    [X] relationship--22222222-5555-4cd6-8ddd-444422229999: 'created' is a required property
+    [X] relationship--22222222-5555-4cd6-8ddd-444422229999: 'modified' is a required property
+    [X] relationship--22222222-5555-4cd6-8ddd-444422229999: source_ref: 'indicator--8b9c0d1e-2f3a-4567-1234-567901234567' does not match the id format ([object-type]--[UUID])
+    [X] relationship--33333333-6666-4de7-8eee-555533331111: 'spec_version' is a required property
+    [X] relationship--33333333-6666-4de7-8eee-555533331111: 'created' is a required property
+    [X] relationship--33333333-6666-4de7-8eee-555533331111: 'modified' is a required property
+    [X] relationship--33333333-6666-4de7-8eee-555533331111: source_ref: 'course-of-action--9c0d1e2f-3a4b-5678-2345-678901234568' does not match the id format ([object-type]--[UUID])
+    [X] relationship--33333333-6666-4de7-8eee-555533331111: target_ref: 'attack-pattern--fa1b2c3d-4e5f-6789-abcd-ef0123456789' does not match the id format ([object-type]--[UUID])
+    [X] relationship--44444444-7777-4ef8-8fff-666644442222: 'spec_version' is a required property
+    [X] relationship--44444444-7777-4ef8-8fff-666644442222: 'created' is a required property
+    [X] relationship--44444444-7777-4ef8-8fff-666644442222: 'modified' is a required property
+    [X] relationship--44444444-7777-4ef8-8fff-666644442222: source_ref: 'course-of-action--0d1e2f3a-4b5c-6789-3456-789012345679' does not match the id format ([object-type]--[UUID])
+    [X] relationship--44444444-7777-4ef8-8fff-666644442222: target_ref: 'attack-pattern--2b3c4d5e-6f7a-8901-bcde-f01234567901' does not match the id format ([object-type]--[UUID])
+    [X] relationship--55555555-8888-4f09-8000-777755553333: 'spec_version' is a required property
+    [X] relationship--55555555-8888-4f09-8000-777755553333: 'created' is a required property
+    [X] relationship--55555555-8888-4f09-8000-777755553333: 'modified' is a required property
+    [X] relationship--55555555-8888-4f09-8000-777755553333: source_ref: 'course-of-action--1e2f3a4b-5c6d-7890-4567-890123456780' does not match the id format ([object-type]--[UUID])
+    [X] relationship--55555555-8888-4f09-8000-777755553333: target_ref: 'attack-pattern--1a2b3c4d-5e6f-7890-abcd-ef0123456790' does not match the id format ([object-type]--[UUID])
