@@ -1,0 +1,428 @@
+{
+"report_meta": {
+"title": "Scattered Spider",
+"advisory_id": "AA23-320A",
+"published": "2025-07-29T00:00:00Z",
+"tlp": "CLEAR",
+"summary": "Joint FBI/CISA/RCMP/ASD’s ACSC/AFP/CCCS/NCSC-UK advisory describing Scattered Spider’s evolving social engineering-driven intrusions, living-off-the-land/RMM usage, data theft for extortion, and recent deployment of DragonForce ransomware; includes MITRE ATT&CK mappings and mitigations. 
+"
+},
+
+"identities": [
+{
+"name": "CISA",
+"identity_class": "organization",
+"roles": ["advisory-producer"],
+"confidence": "high"
+},
+{
+"name": "FBI",
+"identity_class": "organization",
+"roles": ["advisory-producer"],
+"confidence": "high"
+},
+{
+"name": "RCMP",
+"identity_class": "organization",
+"roles": ["advisory-producer"],
+"confidence": "high"
+},
+{
+"name": "ASD’s ACSC",
+"identity_class": "organization",
+"roles": ["advisory-producer"],
+"confidence": "high"
+},
+{
+"name": "AFP",
+"identity_class": "organization",
+"roles": ["advisory-producer"],
+"confidence": "high"
+},
+{
+"name": "Canadian Centre for Cyber Security (CCCS)",
+"identity_class": "organization",
+"roles": ["advisory-producer"],
+"confidence": "high"
+},
+{
+"name": "NCSC-UK",
+"identity_class": "organization",
+"roles": ["advisory-producer"],
+"confidence": "high"
+}
+],
+
+"threat_actors": [
+],
+
+"intrusion_sets": [
+{
+"name": "Scattered Spider",
+"aliases": ["UNC3944", "Scatter Swine", "Oktapus", "Octo Tempest", "Storm-0875", "Muddled Libra"],
+"description": "Cybercriminal group targeting large enterprises and IT help desks; uses multifaceted social engineering (phishing, vishing, SIM swaps), RMM tools and LOTL techniques for access, persistence, data theft/extortion, and—recently—DragonForce ransomware encryption. 
+"
+}
+],
+
+"campaigns": [
+],
+
+"malware": [
+{
+"name": "AveMaria",
+"aliases": ["WarZone"],
+"malware_types": ["remote-access-trojan"],
+"is_family": true,
+"description": "Provides remote access to targeted systems as part of Scattered Spider operations. 
+"
+},
+{
+"name": "Raccoon Stealer",
+"aliases": [],
+"malware_types": ["stealer"],
+"is_family": true,
+"description": "Steals credentials, browser history, cookies, and other data to support access and discovery. 
+"
+},
+{
+"name": "VIDAR Stealer",
+"aliases": ["VIDAR"],
+"malware_types": ["stealer"],
+"is_family": true,
+"description": "Information stealer used to obtain credentials and browser data. 
+"
+},
+{
+"name": "RattyRAT",
+"aliases": [],
+"malware_types": ["remote-access-trojan"],
+"is_family": false,
+"description": "Java-based RAT used for persistent, stealth access and internal reconnaissance. 
+"
+},
+{
+"name": "DragonForce",
+"aliases": ["DragonForce Ransomware"],
+"malware_types": ["ransomware"],
+"is_family": false,
+"description": "Encrypts networks (including VMware ESXi) for ransom following data exfiltration. 
+"
+}
+],
+
+"tools": [
+{
+"name": "Mimikatz",
+"aliases": [],
+"tool_types": ["credential-dumping"],
+"description": "Credential extraction utility leveraged post-access. 
+"
+},
+{
+"name": "Ngrok",
+"aliases": [],
+"tool_types": ["remote-access", "command-and-control", "tunneling"],
+"description": "Public tunneling service to expose internal services over the internet. 
+"
+},
+{
+"name": "Fleetdeck.io",
+"aliases": [],
+"tool_types": ["remote-administration"],
+"description": "Legitimate RMM platform repurposed for access/persistence. 
+"
+},
+{
+"name": "Level.io",
+"aliases": [],
+"tool_types": ["remote-administration"],
+"description": "Legitimate RMM platform used to manage compromised hosts. 
+"
+},
+{
+"name": "Pulseway",
+"aliases": [],
+"tool_types": ["remote-administration"],
+"description": "RMM used to maintain access. 
+"
+},
+{
+"name": "ScreenConnect",
+"aliases": [],
+"tool_types": ["remote-access"],
+"description": "Remote access tool leveraged for command and control and lateral movement. 
+"
+},
+{
+"name": "Splashtop",
+"aliases": [],
+"tool_types": ["remote-access"],
+"description": "Remote access software used for persistence and control. 
+"
+},
+{
+"name": "Tactical.RMM",
+"aliases": [],
+"tool_types": ["remote-administration"],
+"description": "Open-source RMM used to manage compromised endpoints. 
+"
+},
+{
+"name": "Tailscale",
+"aliases": [],
+"tool_types": ["remote-access", "vpn"],
+"description": "Peer-to-peer VPN to secure/obscure communications. 
+"
+},
+{
+"name": "TeamViewer",
+"aliases": [],
+"tool_types": ["remote-access"],
+"description": "Remote access tool used for interactive control. 
+"
+},
+{
+"name": "AnyDesk",
+"aliases": [],
+"tool_types": ["remote-access"],
+"description": "Remote access tool leveraged to bypass alerts as a legitimate application. 
+"
+},
+{
+"name": "Teleport.sh",
+"aliases": [],
+"tool_types": ["tunneling", "remote-access"],
+"description": "Tunneling/remote access to local systems over the internet. 
+"
+}
+],
+
+"infrastructure": [
+{
+"name": "Impersonation/SSO-helpdesk phishing domains",
+"infrastructure_types": ["phishing"],
+"description": "Organization-specific lookalike domains combining target names with terms like SSO/helpdesk (e.g., targetsname-sso[.]com, targetsname-helpdesk[.]com, oktalogin-targetcompany[.]com). 
+"
+},
+{
+"name": "Data exfiltration via cloud services",
+"infrastructure_types": ["exfiltration"],
+"description": "Exfiltration to cloud services including Snowflake and MEGA; references to U.S.-based data centers such as Amazon S3. 
+"
+},
+{
+"name": "Proxy networks",
+"infrastructure_types": ["anonymization"],
+"description": "Use of proxy networks and rotating machine names to mask source and hamper detection. 
+"
+}
+],
+
+"attack_patterns": [
+{ "name": "Phishing for Information", "external_id": "T1598", "external_source": "mitre-attack", "description": "Phishing to obtain credentials and network access. 
+" },
+{ "name": "Impersonation", "external_id": "T1656", "external_source": "mitre-attack", "description": "Posing as IT/helpdesk to elicit passwords/MFA resets or direct users to run tools. 
+" },
+{ "name": "User Execution", "external_id": "T1204", "external_source": "mitre-attack", "description": "Convincing users to execute/approve remote access tools. 
+" },
+{ "name": "Remote Access Software", "external_id": "T1219", "external_source": "mitre-attack", "description": "Use of RMM/remote tools for C2 and persistence. 
+" },
+{ "name": "Phishing", "external_id": "T1566", "external_source": "mitre-attack", "description": "Broad campaigns including email and targeted vishing. 
+" },
+{ "name": "Multi-Factor Authentication Request Generation", "external_id": "T1621", "external_source": "mitre-attack", "description": "MFA fatigue via repeated prompts. 
+" },
+{ "name": "Financial Theft", "external_id": "T1657", "external_source": "mitre-attack", "description": "Monetization via extortion/ransomware/data theft. 
+" },
+{ "name": "Phishing (Mobile)", "external_id": "T1660", "external_source": "mitre-attack", "description": "Smishing for initial access. 
+" },
+{ "name": "Valid Accounts: Domain Accounts", "external_id": "T1078.002", "external_source": "mitre-attack", "description": "Using obtained domain credentials for access. 
+" },
+{ "name": "Trusted Relationship", "external_id": "T1199", "external_source": "mitre-attack", "description": "Abusing third-party helpdesks/services to access networks. 
+" },
+{ "name": "Spearphishing Voice", "external_id": "T1566.004", "external_source": "mitre-attack", "description": "Phone-based elicitation to reset passwords and transfer MFA tokens. 
+" },
+{ "name": "Search Victim-Owned Websites", "external_id": "T1594", "external_source": "mitre-attack", "description": "Collecting org role/contact data from B2B sites. 
+" },
+{ "name": "Gather Victim Identity Information", "external_id": "T1589", "external_source": "mitre-attack", "description": "Harvesting usernames, passwords, PII. 
+" },
+{ "name": "Phishing for Information: Spearphishing Voice", "external_id": "T1598.004", "external_source": "mitre-attack", "description": "Multiple calls to learn/reset workflows and defeat MFA. 
+" },
+{ "name": "Search Open Websites/Domains: Social Media", "external_id": "T1593.001", "external_source": "mitre-attack", "description": "Mining social media to enrich social engineering. 
+" },
+{ "name": "Modify Authentication Process: Multi-Factor Authentication", "external_id": "T1556.006", "external_source": "mitre-attack", "description": "Registering attacker-controlled MFA tokens. 
+" },
+{ "name": "Forge Web Credentials", "external_id": "T1606", "external_source": "mitre-attack", "description": "Forging/abusing MFA/SSO credentials. 
+" },
+{ "name": "Persistence", "external_id": "TA0003", "external_source": "mitre-attack", "description": "Maintaining access through accounts, RMM, and SSO federation. 
+" },
+{ "name": "Domain Policy Modification: Domain Trust Modification", "external_id": "T1484.002", "external_source": "mitre-attack", "description": "Adding federated IdP and auto-linking accounts for privilege escalation. 
+" },
+{ "name": "Privilege Escalation", "external_id": "TA0004", "external_source": "mitre-attack", "description": "Escalating privileges through identity provider control/social engineering. 
+" },
+{ "name": "Valid Accounts", "external_id": "T1078", "external_source": "mitre-attack", "description": "Continued access even after password changes. 
+" },
+{ "name": "Data from Information Repositories: SharePoint", "external_id": "T1213.002", "external_source": "mitre-attack", "description": "Searching SharePoint sites for sensitive data. 
+" },
+{ "name": "Unsecured Credentials: Credentials in Files", "external_id": "T1552.001", "external_source": "mitre-attack", "description": "Hunting stored credentials. 
+" },
+{ "name": "Remote System Discovery", "external_id": "T1018", "external_source": "mitre-attack", "description": "Locating vCenter and other infrastructure. 
+" },
+{ "name": "Discovery", "external_id": "TA0007", "external_source": "mitre-attack", "description": "Enumerating AD, backups, VPN instructions, repositories. 
+" },
+{ "name": "Data from Information Repositories: Code Repositories", "external_id": "T1213.003", "external_source": "mitre-attack", "description": "Accessing code repositories for data theft. 
+" },
+{ "name": "Unsecured Credentials: Private Keys", "external_id": "T1552.004", "external_source": "mitre-attack", "description": "Hunting for private keys. 
+" },
+{ "name": "File and Directory Discovery", "external_id": "T1083", "external_source": "mitre-attack", "description": "Searching file systems for sensitive data. 
+" },
+{ "name": "Exfiltration", "external_id": "TA0010", "external_source": "mitre-attack", "description": "Data theft for extortion; exfil via web services. 
+" },
+{ "name": "Cloud Service Dashboard", "external_id": "T1538", "external_source": "mitre-attack", "description": "Using AWS Systems Manager Inventory to locate targets. 
+" },
+{ "name": "Lateral Movement", "external_id": "TA0008", "external_source": "mitre-attack", "description": "Traversing networks and cloud infrastructure. 
+" },
+{ "name": "Remote Services: Cloud Services", "external_id": "T1021.007", "external_source": "mitre-attack", "description": "Using existing cloud instances to move and collect data. 
+" },
+{ "name": "Modify Cloud Compute Infrastructure: Create Cloud Instance", "external_id": "T1578.002", "external_source": "mitre-attack", "description": "Creating new cloud instances for movement/collection. 
+" },
+{ "name": "Serverless Execution", "external_id": "T1648", "external_source": "mitre-attack", "description": "Using ETL to aggregate data (e.g., in cloud). 
+" },
+{ "name": "Data Staged", "external_id": "T1074", "external_source": "mitre-attack", "description": "Staging data in centralized stores pre-exfiltration. 
+" },
+{ "name": "Data from Cloud Storage", "external_id": "T1530", "external_source": "mitre-attack", "description": "Querying cloud storage (e.g., Snowflake) for data. 
+" },
+{ "name": "Exfiltration Over Web Service", "external_id": "T1567", "external_source": "mitre-attack", "description": "Exfiltration using services like Snowflake; large query bursts. 
+" },
+{ "name": "Data Encrypted for Impact", "external_id": "T1486", "external_source": "mitre-attack", "description": "Encrypting systems (ESXi) after exfiltration for ransom. 
+" },
+{ "name": "Email Collection", "external_id": "T1114", "external_source": "mitre-attack", "description": "Monitoring email/Teams/Slack for detection/IR chatter. 
+" },
+{ "name": "Create Account", "external_id": "T1136", "external_source": "mitre-attack", "description": "Creating new identities to maintain access. 
+" },
+{ "name": "Establish Accounts: Social Media Accounts", "external_id": "T1585.001", "external_source": "mitre-attack", "description": "Fake social profiles to backstop identities. 
+" },
+{ "name": "Proxy", "external_id": "T1090", "external_source": "mitre-attack", "description": "Using proxy networks and rotating hostnames to evade detection. 
+" },
+{ "name": "Browser Information Discovery", "external_id": "T1217", "external_source": "mitre-attack", "description": "Collecting browser histories. 
+" },
+{ "name": "Steal Web Session Cookie", "external_id": "T1539", "external_source": "mitre-attack", "description": "Cookie theft to bypass authentication. 
+" },
+{ "name": "SIM Swap", "external_id": "T1451", "external_source": "mitre-attack", "description": "Taking control of phone numbers to capture MFA. 
+" }
+],
+
+"vulnerabilities": [
+],
+
+"indicators": [
+],
+
+"observed_data": [
+],
+
+"courses_of_action": [
+{
+"name": "Maintain offline, regularly tested backups",
+"description": "Keep encrypted, immutable offline backups stored separately; test restorations to limit disruption from extortion/ransomware.",
+"x_mapped_from_text": "“Maintain offline backups of data … tested regularly.” 
+"
+},
+{
+"name": "Enable phishing-resistant MFA (FIDO/WebAuthn/PKI)",
+"description": "Adopt phishing-resistant MFA to defeat push bombing, SIM swaps, and OTP theft.",
+"x_mapped_from_text": "“Enable and enforce phishing-resistant multifactor authentication (MFA).” 
+"
+},
+{
+"name": "Implement application allowlisting and control RMM",
+"description": "Allowlist software; audit, restrict, and monitor remote access tools; block unauthorized portable executables.",
+"x_mapped_from_text": "“Implement application controls … allowlisting remote access programs.” 
+"
+},
+{
+"name": "Harden and limit RDP",
+"description": "Audit/use only when necessary; close unused ports; enforce account lockouts; require phishing-resistant MFA; log and monitor RDP.",
+"x_mapped_from_text": "“Strictly limit the use of Remote Desktop Protocol (RDP) … apply best practices.” 
+"
+},
+{
+"name": "Prioritize patching known exploited vulnerabilities",
+"description": "Keep OS/software/firmware updated; prioritize KEV items on internet-facing systems.",
+"x_mapped_from_text": "“Keep all operating systems, software, and firmware up to date … Prioritize patching known exploited vulnerabilities …” 
+"
+},
+{
+"name": "Segment networks and monitor for lateral movement",
+"description": "Use segmentation to constrain spread; deploy EDR/network telemetry; detect abnormal RMM and cloud instance usage.",
+"x_mapped_from_text": "“Segment networks … Identify, detect, and investigate abnormal activity … EDR tools …” 
+"
+},
+{
+"name": "Enhance monitoring for risky logins and account misuse",
+"description": "Continuously monitor for suspicious sign-ins and unusual behavior to catch identity abuse.",
+"x_mapped_from_text": "“Enhance monitoring against unauthorized account misuse … ‘risky logins’ …” 
+"
+},
+{
+"name": "Disable unused ports/protocols and harden email",
+"description": "Disable unused services; add external banners; consider disabling hyperlinks in inbound emails.",
+"x_mapped_from_text": "“Disable unused ports and protocols … Consider adding an email banner … Disable hyperlinks …” 
+"
+}
+],
+
+"reports": [
+{
+"name": "AA23-320A Scattered Spider",
+"published": "2025-07-29T00:00:00Z",
+"description": "Updated multi-agency advisory on Scattered Spider’s TTPs, new malware/ransomware usage (including DragonForce), cloud data exfiltration patterns (e.g., Snowflake/MEGA), and prioritized mitigations mapped to ATT&CK. 
+",
+"object_summary": [
+"Intrusion Set: Scattered Spider (aliases: UNC3944, Scatter Swine, Oktapus, Octo Tempest, Storm-0875, Muddled Libra)",
+"Malware: AveMaria/WarZone, Raccoon Stealer, VIDAR Stealer, RattyRAT, DragonForce ransomware",
+"Tools: Mimikatz; RMM/tunneling tools incl. AnyDesk, TeamViewer, ScreenConnect, Splashtop, Fleetdeck.io, Level.io, Pulseway, Tactical.RMM, Tailscale, Ngrok, Teleport.sh",
+"Infrastructure: phishing lookalike domains; cloud exfiltration via Snowflake/MEGA/Amazon S3; proxy networks",
+"ATT&CK: Recon through Impact techniques incl. T1598, T1656, T1204, T1219, T1566, T1621, T1657, T1660, T1078.002, T1199, T1566.004, T1594, T1589, T1598.004, T1593.001, T1556.006, T1606, TA0003, T1484.002, TA0004, T1078, T1213.002, T1552.001, T1018, TA0007, T1213.003, T1552.004, T1083, TA0010, T1538, TA0008, T1021.007, T1578.002, T1648, T1074, T1530, T1567, T1486, T1114, T1136, T1585.001, T1090, T1217, T1539, T1451",
+"TLP: CLEAR"
+]
+}
+],
+
+"relationships": [
+{ "source_type": "intrusion-set", "source_name": "Scattered Spider", "relationship_type": "uses", "target_type": "malware", "target_name": "AveMaria", "confidence": "high" },
+{ "source_type": "intrusion-set", "source_name": "Scattered Spider", "relationship_type": "uses", "target_type": "malware", "target_name": "Raccoon Stealer", "confidence": "high" },
+{ "source_type": "intrusion-set", "source_name": "Scattered Spider", "relationship_type": "uses", "target_type": "malware", "target_name": "VIDAR Stealer", "confidence": "high" },
+{ "source_type": "intrusion-set", "source_name": "Scattered Spider", "relationship_type": "uses", "target_type": "malware", "target_name": "RattyRAT", "confidence": "medium" },
+{ "source_type": "intrusion-set", "source_name": "Scattered Spider", "relationship_type": "uses", "target_type": "malware", "target_name": "DragonForce", "description": "Encrypts victim systems (incl. ESXi) post-exfiltration.", "confidence": "medium" },
+
+{ "source_type": "intrusion-set", "source_name": "Scattered Spider", "relationship_type": "uses", "target_type": "tool", "target_name": "Mimikatz", "confidence": "high" },
+{ "source_type": "intrusion-set", "source_name": "Scattered Spider", "relationship_type": "uses", "target_type": "tool", "target_name": "Ngrok", "confidence": "medium" },
+{ "source_type": "intrusion-set", "source_name": "Scattered Spider", "relationship_type": "uses", "target_type": "tool", "target_name": "Fleetdeck.io", "confidence": "medium" },
+{ "source_type": "intrusion-set", "source_name": "Scattered Spider", "relationship_type": "uses", "target_type": "tool", "target_name": "Level.io", "confidence": "medium" },
+{ "source_type": "intrusion-set", "source_name": "Scattered Spider", "relationship_type": "uses", "target_type": "tool", "target_name": "Pulseway", "confidence": "medium" },
+{ "source_type": "intrusion-set", "source_name": "Scattered Spider", "relationship_type": "uses", "target_type": "tool", "target_name": "ScreenConnect", "confidence": "high" },
+{ "source_type": "intrusion-set", "source_name": "Scattered Spider", "relationship_type": "uses", "target_type": "tool", "target_name": "Splashtop", "confidence": "high" },
+{ "source_type": "intrusion-set", "source_name": "Scattered Spider", "relationship_type": "uses", "target_type": "tool", "target_name": "Tactical.RMM", "confidence": "medium" },
+{ "source_type": "intrusion-set", "source_name": "Scattered Spider", "relationship_type": "uses", "target_type": "tool", "target_name": "Tailscale", "confidence": "medium" },
+{ "source_type": "intrusion-set", "source_name": "Scattered Spider", "relationship_type": "uses", "target_type": "tool", "target_name": "TeamViewer", "confidence": "high" },
+{ "source_type": "intrusion-set", "source_name": "Scattered Spider", "relationship_type": "uses", "target_type": "tool", "target_name": "AnyDesk", "confidence": "medium" },
+{ "source_type": "intrusion-set", "source_name": "Scattered Spider", "relationship_type": "uses", "target_type": "tool", "target_name": "Teleport.sh", "confidence": "medium" },
+
+{ "source_type": "intrusion-set", "source_name": "Scattered Spider", "relationship_type": "uses", "target_type": "infrastructure", "target_name": "Impersonation/SSO-helpdesk phishing domains", "confidence": "high" },
+{ "source_type": "intrusion-set", "source_name": "Scattered Spider", "relationship_type": "uses", "target_type": "infrastructure", "target_name": "Data exfiltration via cloud services", "confidence": "high" },
+{ "source_type": "intrusion-set", "source_name": "Scattered Spider", "relationship_type": "uses", "target_type": "infrastructure", "target_name": "Proxy networks", "confidence": "medium" },
+
+{ "source_type": "course-of-action", "source_name": "Enable phishing-resistant MFA (FIDO/WebAuthn/PKI)", "relationship_type": "mitigates", "target_type": "attack-pattern", "target_name": "Impersonation", "confidence": "high" },
+{ "source_type": "course-of-action", "source_name": "Enable phishing-resistant MFA (FIDO/WebAuthn/PKI)", "relationship_type": "mitigates", "target_type": "attack-pattern", "target_name": "Multi-Factor Authentication Request Generation", "confidence": "high" },
+{ "source_type": "course-of-action", "source_name": "Enable phishing-resistant MFA (FIDO/WebAuthn/PKI)", "relationship_type": "mitigates", "target_type": "attack-pattern", "target_name": "SIM Swap", "confidence": "medium" },
+{ "source_type": "course-of-action", "source_name": "Implement application allowlisting and control RMM", "relationship_type": "mitigates", "target_type": "attack-pattern", "target_name": "Remote Access Software", "confidence": "high" },
+{ "source_type": "course-of-action", "source_name": "Harden and limit RDP", "relationship_type": "mitigates", "target_type": "attack-pattern", "target_name": "Lateral Movement", "confidence": "medium" },
+{ "source_type": "course-of-action", "source_name": "Maintain offline, regularly tested backups", "relationship_type": "mitigates", "target_type": "attack-pattern", "target_name": "Data Encrypted for Impact", "confidence": "high" },
+{ "source_type": "course-of-action", "source_name": "Segment networks and monitor for lateral movement", "relationship_type": "mitigates", "target_type": "attack-pattern", "target_name": "Remote Services: Cloud Services", "confidence": "medium" },
+{ "source_type": "course-of-action", "source_name": "Prioritize patching known exploited vulnerabilities", "relationship_type": "mitigates", "target_type": "attack-pattern", "target_name": "Privilege Escalation", "confidence": "medium" },
+{ "source_type": "course-of-action", "source_name": "Enhance monitoring for risky logins and account misuse", "relationship_type": "mitigates", "target_type": "attack-pattern", "target_name": "Valid Accounts", "confidence": "medium" }
+
+
+]
+}
