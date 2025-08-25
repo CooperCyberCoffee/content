@@ -1,0 +1,1 @@
+Generate a prompt to do the following: Extract all valid STIX 2.1 objects from a CISA advisory in pdf format. Remove duplicate objects. Then create a valid STIX 2.1 bundle from the extracted STIX objects that can be used to share threat intelligence.
