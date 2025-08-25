@@ -1,0 +1,324 @@
+{
+  "type": "bundle",
+  "id": "bundle--9f1c3de4-2a4b-4a12-8f0d-6e5c3b2a1d4f",
+  "spec_version": "2.1",
+  "objects": [
+    {
+      "type": "intrusion-set",
+      "id": "intrusion-set--883f4b2e-5f7a-4a1c-a7cf-39fa1ae2d111",
+      "name": "Scattered Spider",
+      "aliases": [
+        "UNC3944",
+        "Scatter Swine",
+        "Oktapus",
+        "Octo Tempest",
+        "Storm-0875",
+        "Muddled Libra"
+      ],
+      "description": "Scattered Spider is a cybercriminal group that targets large companies and their contracted IT help desks, engaging in data theft for extortion and deploying ransomware variants such as DragonForce."
+    },
+    {
+      "type": "malware",
+      "id": "malware--aadf8867-8b2d-4d26-bda2-89cfc57c2222",
+      "name": "AveMaria",
+      "description": "Remote access trojan enabling access to targeted organization's systems."
+    },
+    {
+      "type": "malware",
+      "id": "malware--b1e4f2c3-6a8e-4e5d-9bfb-3e0108743333",
+      "name": "Raccoon Stealer",
+      "description": "Information stealer that collects credentials, browser history, cookies, and other data."
+    },
+    {
+      "type": "malware",
+      "id": "malware--c2d3f4e5-7b8a-4c9d-ab1c-4d5678124444",
+      "name": "VIDAR Stealer",
+      "description": "Information stealer that collects credentials, browser history, cookies, and other data."
+    },
+    {
+      "type": "malware",
+      "id": "malware--d3c4e5f6-8a9b-4d8c-b2a3-5e6789235555",
+      "name": "RattyRAT",
+      "description": "Java-based remote access trojan used for persistent, stealth access and internal reconnaissance."
+    },
+    {
+      "type": "malware",
+      "id": "malware--e4f5a6b7-9c8d-4e7f-c3b4-6f7890346666",
+      "name": "DragonForce Ransomware",
+      "description": "Ransomware that encrypts data on targeted networks and demands ransom."
+    },
+    {
+      "type": "tool",
+      "id": "tool--5b1e6a97-7e3d-4c8c-9b11-9aef8d5d1111",
+      "name": "Mimikatz",
+      "description": "Extracts credentials from a system."
+    },
+    {
+      "type": "tool",
+      "id": "tool--6c2f7b98-8f4e-5d9d-0c22-abf0126e2222",
+      "name": "Ngrok",
+      "description": "Enables remote access to a local web server by tunneling over the internet."
+    },
+    {
+      "type": "tool",
+      "id": "tool--7d3f4e0b-9e5a-6f0c-1d33-bc0112373333",
+      "name": "AnyDesk",
+      "description": "Enables remote access to network devices for management, bypassing security alerts."
+    },
+    {
+      "type": "attack-pattern",
+      "id": "attack-pattern--fa1b2c3d-4e5f-6789-abcd-ef0123456789",
+      "name": "Phishing",
+      "external_references": [
+        {
+          "source_name": "mitre-attack",
+          "external_id": "T1566"
+        }
+      ],
+      "description": "Broad phishing attempts to obtain credentials and initial access."
+    },
+    {
+      "type": "attack-pattern",
+      "id": "attack-pattern--0f1a2b3c-4d5e-6f78-9abc-def012345678",
+      "name": "SIM Swap",
+      "external_references": [
+        {
+          "source_name": "mitre-attack",
+          "external_id": "T1451"
+        }
+      ],
+      "description": "Convincing carriers to transfer control of a user's phone number to gain MFA prompts."
+    },
+    {
+      "type": "attack-pattern",
+      "id": "attack-pattern--1a2b3c4d-5e6f-7890-abcd-ef0123456790",
+      "name": "Multi-Factor Authentication Request Generation",
+      "external_references": [
+        {
+          "source_name": "mitre-attack",
+          "external_id": "T1621"
+        }
+      ],
+      "description": "Sent repeated MFA prompts leading to users accepting by fatigue."
+    },
+    {
+      "type": "attack-pattern",
+      "id": "attack-pattern--2b3c4d5e-6f7a-8901-bcde-f01234567901",
+      "name": "Data Encrypted for Impact",
+      "external_references": [
+        {
+          "source_name": "mitre-attack",
+          "external_id": "T1486"
+        }
+      ],
+      "description": "Encrypting data on target systems and demanding a ransom."
+    },
+    {
+      "type": "indicator",
+      "id": "indicator--3c4d5e6f-7a8b-9012-cdef-012345679012",
+      "name": "targetsname-sso.com",
+      "pattern": "[domain-name:value = 'targetsname-sso.com']",
+      "pattern_type": "stix"
+    },
+    {
+      "type": "indicator",
+      "id": "indicator--4d5e6f7a-8b9c-0123-def0-123456790123",
+      "name": "targetsname-servicedesk.com",
+      "pattern": "[domain-name:value = 'targetsname-servicedesk.com']",
+      "pattern_type": "stix"
+    },
+    {
+      "type": "indicator",
+      "id": "indicator--5e6f7a8b-9c0d-1234-ef01-234567901234",
+      "name": "targetsname-okta.com",
+      "pattern": "[domain-name:value = 'targetsname-okta.com']",
+      "pattern_type": "stix"
+    },
+    {
+      "type": "indicator",
+      "id": "indicator--6f7a8b9c-0d1e-2345-f012-345679012345",
+      "name": "targetsname-cms.com",
+      "pattern": "[domain-name:value = 'targetsname-cms.com']",
+      "pattern_type": "stix"
+    },
+    {
+      "type": "indicator",
+      "id": "indicator--7a8b9c0d-1e2f-3456-0123-456790123456",
+      "name": "targetsname-helpdesk.com",
+      "pattern": "[domain-name:value = 'targetsname-helpdesk.com']",
+      "pattern_type": "stix"
+    },
+    {
+      "type": "indicator",
+      "id": "indicator--8b9c0d1e-2f3a-4567-1234-567901234567",
+      "name": "oktalogin-targetcompany.com",
+      "pattern": "[domain-name:value = 'oktalogin-targetcompany.com']",
+      "pattern_type": "stix"
+    },
+    {
+      "type": "course-of-action",
+      "id": "course-of-action--9c0d1e2f-3a4b-5678-2345-678901234568",
+      "name": "Application Allowlisting",
+      "description": "Implement application controls to manage and block unauthorized software execution, including portable executables."
+    },
+    {
+      "type": "course-of-action",
+      "id": "course-of-action--0d1e2f3a-4b5c-6789-3456-789012345679",
+      "name": "Offline Data Backups",
+      "description": "Maintain offline backups stored separately from production systems and test restoration regularly."
+    },
+    {
+      "type": "course-of-action",
+      "id": "course-of-action--1e2f3a4b-5c6d-7890-4567-890123456780",
+      "name": "Phishing-Resistant MFA",
+      "description": "Implement FIDO/WebAuthn or PKI-based MFA to resist SIM swap and push bombing attacks."
+    },
+    {
+      "type": "relationship",
+      "id": "relationship--11111111-aaaa-4bbb-8ccc-dddd11112222",
+      "relationship_type": "uses",
+      "source_ref": "intrusion-set--883f4b2e-5f7a-4a1c-a7cf-39fa1ae2d111",
+      "target_ref": "malware--aadf8867-8b2d-4d26-bda2-89cfc57c2222"
+    },
+    {
+      "type": "relationship",
+      "id": "relationship--22222222-bbbb-4ccc-8ddd-eeee22223333",
+      "relationship_type": "uses",
+      "source_ref": "intrusion-set--883f4b2e-5f7a-4a1c-a7cf-39fa1ae2d111",
+      "target_ref": "malware--b1e4f2c3-6a8e-4e5d-9bfb-3e0108743333"
+    },
+    {
+      "type": "relationship",
+      "id": "relationship--33333333-cccc-4ddd-8eee-ffff33334444",
+      "relationship_type": "uses",
+      "source_ref": "intrusion-set--883f4b2e-5f7a-4a1c-a7cf-39fa1ae2d111",
+      "target_ref": "malware--c2d3f4e5-7b8a-4c9d-ab1c-4d5678124444"
+    },
+    {
+      "type": "relationship",
+      "id": "relationship--44444444-dddd-4eee-8fff-000044445555",
+      "relationship_type": "uses",
+      "source_ref": "intrusion-set--883f4b2e-5f7a-4a1c-a7cf-39fa1ae2d111",
+      "target_ref": "malware--d3c4e5f6-8a9b-4d8c-b2a3-5e6789235555"
+    },
+    {
+      "type": "relationship",
+      "id": "relationship--55555555-eeee-4fff-8000-111155556666",
+      "relationship_type": "uses",
+      "source_ref": "intrusion-set--883f4b2e-5f7a-4a1c-a7cf-39fa1ae2d111",
+      "target_ref": "malware--e4f5a6b7-9c8d-4e7f-c3b4-6f7890346666"
+    },
+    {
+      "type": "relationship",
+      "id": "relationship--66666666-ffff-40aa-8111-222266667777",
+      "relationship_type": "uses",
+      "source_ref": "intrusion-set--883f4b2e-5f7a-4a1c-a7cf-39fa1ae2d111",
+      "target_ref": "tool--5b1e6a97-7e3d-4c8c-9b11-9aef8d5d1111"
+    },
+    {
+      "type": "relationship",
+      "id": "relationship--77777777-aaaa-412b-8222-333377778888",
+      "relationship_type": "uses",
+      "source_ref": "intrusion-set--883f4b2e-5f7a-4a1c-a7cf-39fa1ae2d111",
+      "target_ref": "tool--6c2f7b98-8f4e-5d9d-0c22-abf0126e2222"
+    },
+    {
+      "type": "relationship",
+      "id": "relationship--88888888-bbbb-423c-8333-444488889999",
+      "relationship_type": "uses",
+      "source_ref": "intrusion-set--883f4b2e-5f7a-4a1c-a7cf-39fa1ae2d111",
+      "target_ref": "tool--7d3f4e0b-9e5a-6f0c-1d33-bc0112373333"
+    },
+    {
+      "type": "relationship",
+      "id": "relationship--99999999-cccc-434d-8444-555599990000",
+      "relationship_type": "uses",
+      "source_ref": "intrusion-set--883f4b2e-5f7a-4a1c-a7cf-39fa1ae2d111",
+      "target_ref": "attack-pattern--fa1b2c3d-4e5f-6789-abcd-ef0123456789"
+    },
+    {
+      "type": "relationship",
+      "id": "relationship--aaaaaaaa-dddd-445e-8555-6666aaaa1111",
+      "relationship_type": "uses",
+      "source_ref": "intrusion-set--883f4b2e-5f7a-4a1c-a7cf-39fa1ae2d111",
+      "target_ref": "attack-pattern--0f1a2b3c-4d5e-6f78-9abc-def012345678"
+    },
+    {
+      "type": "relationship",
+      "id": "relationship--bbbbbbbb-eeee-456f-8666-7777bbbb2222",
+      "relationship_type": "uses",
+      "source_ref": "intrusion-set--883f4b2e-5f7a-4a1c-a7cf-39fa1ae2d111",
+      "target_ref": "attack-pattern--1a2b3c4d-5e6f-7890-abcd-ef0123456790"
+    },
+    {
+      "type": "relationship",
+      "id": "relationship--cccccccc-ffff-4670-8777-8888cccc3333",
+      "relationship_type": "uses",
+      "source_ref": "intrusion-set--883f4b2e-5f7a-4a1c-a7cf-39fa1ae2d111",
+      "target_ref": "attack-pattern--2b3c4d5e-6f7a-8901-bcde-f01234567901"
+    },
+    {
+      "type": "relationship",
+      "id": "relationship--dddddddd-0000-4781-8888-9999dddd4444",
+      "relationship_type": "indicates",
+      "source_ref": "indicator--3c4d5e6f-7a8b-9012-cdef-012345679012",
+      "target_ref": "intrusion-set--883f4b2e-5f7a-4a1c-a7cf-39fa1ae2d111"
+    },
+    {
+      "type": "relationship",
+      "id": "relationship--eeeeeeee-1111-4892-8999-0000eeee5555",
+      "relationship_type": "indicates",
+      "source_ref": "indicator--4d5e6f7a-8b9c-0123-def0-123456790123",
+      "target_ref": "intrusion-set--883f4b2e-5f7a-4a1c-a7cf-39fa1ae2d111"
+    },
+    {
+      "type": "relationship",
+      "id": "relationship--ffffffff-2222-49a3-8aaa-1111ffff6666",
+      "relationship_type": "indicates",
+      "source_ref": "indicator--5e6f7a8b-9c0d-1234-ef01-234567901234",
+      "target_ref": "intrusion-set--883f4b2e-5f7a-4a1c-a7cf-39fa1ae2d111"
+    },
+    {
+      "type": "relationship",
+      "id": "relationship--00000000-3333-4ab4-8bbb-222200007777",
+      "relationship_type": "indicates",
+      "source_ref": "indicator--6f7a8b9c-0d1e-2345-f012-345679012345",
+      "target_ref": "intrusion-set--883f4b2e-5f7a-4a1c-a7cf-39fa1ae2d111"
+    },
+    {
+      "type": "relationship",
+      "id": "relationship--11111111-4444-4bc5-8ccc-333311118888",
+      "relationship_type": "indicates",
+      "source_ref": "indicator--7a8b9c0d-1e2f-3456-0123-456790123456",
+      "target_ref": "intrusion-set--883f4b2e-5f7a-4a1c-a7cf-39fa1ae2d111"
+    },
+    {
+      "type": "relationship",
+      "id": "relationship--22222222-5555-4cd6-8ddd-444422229999",
+      "relationship_type": "indicates",
+      "source_ref": "indicator--8b9c0d1e-2f3a-4567-1234-567901234567",
+      "target_ref": "intrusion-set--883f4b2e-5f7a-4a1c-a7cf-39fa1ae2d111"
+    },
+    {
+      "type": "relationship",
+      "id": "relationship--33333333-6666-4de7-8eee-555533331111",
+      "relationship_type": "mitigates",
+      "source_ref": "course-of-action--9c0d1e2f-3a4b-5678-2345-678901234568",
+      "target_ref": "attack-pattern--fa1b2c3d-4e5f-6789-abcd-ef0123456789"
+    },
+    {
+      "type": "relationship",
+      "id": "relationship--44444444-7777-4ef8-8fff-666644442222",
+      "relationship_type": "mitigates",
+      "source_ref": "course-of-action--0d1e2f3a-4b5c-6789-3456-789012345679",
+      "target_ref": "attack-pattern--2b3c4d5e-6f7a-8901-bcde-f01234567901"
+    },
+    {
+      "type": "relationship",
+      "id": "relationship--55555555-8888-4f09-8000-777755553333",
+      "relationship_type": "mitigates",
+      "source_ref": "course-of-action--1e2f3a4b-5c6d-7890-4567-890123456780",
+      "target_ref": "attack-pattern--1a2b3c4d-5e6f-7890-abcd-ef0123456790"
+    }
+  ]
+}
