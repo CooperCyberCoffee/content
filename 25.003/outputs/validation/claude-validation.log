@@ -1,0 +1,87 @@
+[-] Results for: claude-output.json
+[X] STIX JSON: Invalid
+    [!] Warning: bundle--a8f3c9e2-4b5d-4e6f-8a1b-9c2d3e4f5a6b: {401} Custom property 'spec_version' should be implemented using an extension with an 'extension_type' of 'property-extension' or 'toplevel-property-extension'.
+    [!] Warning: bundle--a8f3c9e2-4b5d-4e6f-8a1b-9c2d3e4f5a6b: {401} Custom property 'created' should be implemented using an extension with an 'extension_type' of 'property-extension' or 'toplevel-property-extension'.
+    [!] Warning: bundle--a8f3c9e2-4b5d-4e6f-8a1b-9c2d3e4f5a6b: {401} Custom property 'modified' should be implemented using an extension with an 'extension_type' of 'property-extension' or 'toplevel-property-extension'.
+    [!] Warning: report--b1c2d3e4-5f6a-7b8c-9d0e-1f2a3b4c5d6e: {103} Given ID value report--b1c2d3e4-5f6a-7b8c-9d0e-1f2a3b4c5d6e is not a valid UUIDv4 ID.
+    [!] Warning: report--b1c2d3e4-5f6a-7b8c-9d0e-1f2a3b4c5d6e: {302} External reference 'CISA' has a URL but no hash.
+    [!] Warning: threat-actor--c1d2e3f4-5a6b-7c8d-9e0f-1a2b3c4d5e6f: {103} Given ID value threat-actor--c1d2e3f4-5a6b-7c8d-9e0f-1a2b3c4d5e6f is not a valid UUIDv4 ID.
+    [!] Warning: threat-actor--c1d2e3f4-5a6b-7c8d-9e0f-1a2b3c4d5e6f: {211} primary_motivation contains a value not in the attack-motivation-ov vocabulary.
+    [!] Warning: malware--d1e2f3a4-5b6c-7d8e-9f0a-1b2c3d4e5f6a: {103} Given ID value malware--d1e2f3a4-5b6c-7d8e-9f0a-1b2c3d4e5f6a is not a valid UUIDv4 ID.
+    [!] Warning: malware--e1f2a3b4-5c6d-7e8f-9a0b-1c2d3e4f5a6b: {103} Given ID value malware--e1f2a3b4-5c6d-7e8f-9a0b-1c2d3e4f5a6b is not a valid UUIDv4 ID.
+    [!] Warning: malware--e1f2a3b4-5c6d-7e8f-9a0b-1c2d3e4f5a6b: {216} malware_types contains a value not in the malware-type-ov vocabulary.
+    [!] Warning: malware--f1a2b3c4-5d6e-7f8a-9b0c-1d2e3f4a5b6c: {103} Given ID value malware--f1a2b3c4-5d6e-7f8a-9b0c-1d2e3f4a5b6c is not a valid UUIDv4 ID.
+    [!] Warning: malware--f1a2b3c4-5d6e-7f8a-9b0c-1d2e3f4a5b6c: {216} malware_types contains a value not in the malware-type-ov vocabulary.
+    [!] Warning: malware--a1b2c3d4-5e6f-7a8b-9c0d-1e2f3a4b5c6d: {103} Given ID value malware--a1b2c3d4-5e6f-7a8b-9c0d-1e2f3a4b5c6d is not a valid UUIDv4 ID.
+    [!] Warning: malware--b1c2d3e4-5f6a-7b8c-9d0e-1f2a3b4c5d6e: {103} Given ID value malware--b1c2d3e4-5f6a-7b8c-9d0e-1f2a3b4c5d6e is not a valid UUIDv4 ID.
+    [!] Warning: indicator--c1d2e3f4-5a6b-7c8d-9e0f-1a2b3c4d5e6f: {103} Given ID value indicator--c1d2e3f4-5a6b-7c8d-9e0f-1a2b3c4d5e6f is not a valid UUIDv4 ID.
+    [!] Warning: indicator--d1e2f3a4-5b6c-7d8e-9f0a-1b2c3d4e5f6a: {103} Given ID value indicator--d1e2f3a4-5b6c-7d8e-9f0a-1b2c3d4e5f6a is not a valid UUIDv4 ID.
+    [!] Warning: indicator--e1f2a3b4-5c6d-7e8f-9a0b-1c2d3e4f5a6b: {103} Given ID value indicator--e1f2a3b4-5c6d-7e8f-9a0b-1c2d3e4f5a6b is not a valid UUIDv4 ID.
+    [!] Warning: attack-pattern--f1a2b3c4-5d6e-7f8a-9b0c-1d2e3f4a5b6c: {103} Given ID value attack-pattern--f1a2b3c4-5d6e-7f8a-9b0c-1d2e3f4a5b6c is not a valid UUIDv4 ID.
+    [!] Warning: attack-pattern--f1a2b3c4-5d6e-7f8a-9b0c-1d2e3f4a5b6c: {302} External reference 'mitre-attack' has a URL but no hash.
+    [!] Warning: attack-pattern--a1b2c3d4-5e6f-7a8b-9c0d-1e2f3a4b5c6d: {103} Given ID value attack-pattern--a1b2c3d4-5e6f-7a8b-9c0d-1e2f3a4b5c6d is not a valid UUIDv4 ID.
+    [!] Warning: attack-pattern--a1b2c3d4-5e6f-7a8b-9c0d-1e2f3a4b5c6d: {302} External reference 'mitre-attack' has a URL but no hash.
+    [!] Warning: attack-pattern--b1c2d3e4-5f6a-7b8c-9d0e-1f2a3b4c5d6e: {103} Given ID value attack-pattern--b1c2d3e4-5f6a-7b8c-9d0e-1f2a3b4c5d6e is not a valid UUIDv4 ID.
+    [!] Warning: attack-pattern--b1c2d3e4-5f6a-7b8c-9d0e-1f2a3b4c5d6e: {302} External reference 'mitre-attack' has a URL but no hash.
+    [!] Warning: attack-pattern--c1e2f3a4-5b6c-7d8e-9f0a-1b2c3d4e5f6a: {103} Given ID value attack-pattern--c1e2f3a4-5b6c-7d8e-9f0a-1b2c3d4e5f6a is not a valid UUIDv4 ID.
+    [!] Warning: attack-pattern--c1e2f3a4-5b6c-7d8e-9f0a-1b2c3d4e5f6a: {302} External reference 'mitre-attack' has a URL but no hash.
+    [!] Warning: attack-pattern--d1f2a3b4-5c6d-7e8f-9a0b-1c2d3e4f5a6b: {103} Given ID value attack-pattern--d1f2a3b4-5c6d-7e8f-9a0b-1c2d3e4f5a6b is not a valid UUIDv4 ID.
+    [!] Warning: attack-pattern--d1f2a3b4-5c6d-7e8f-9a0b-1c2d3e4f5a6b: {302} External reference 'mitre-attack' has a URL but no hash.
+    [!] Warning: course-of-action--e1a2b3c4-5d6f-7a8b-9c0d-1e2f3a4b5c6d: {103} Given ID value course-of-action--e1a2b3c4-5d6f-7a8b-9c0d-1e2f3a4b5c6d is not a valid UUIDv4 ID.
+    [!] Warning: course-of-action--f1b2c3d4-5e6a-7b8c-9d0e-1f2a3b4c5d6e: {103} Given ID value course-of-action--f1b2c3d4-5e6a-7b8c-9d0e-1f2a3b4c5d6e is not a valid UUIDv4 ID.
+    [!] Warning: course-of-action--a1c2d3e4-5f6a-7b8c-9d0e-1f2a3b4c5d6e: {103} Given ID value course-of-action--a1c2d3e4-5f6a-7b8c-9d0e-1f2a3b4c5d6e is not a valid UUIDv4 ID.
+    [!] Warning: relationship--b1d2e3f4-5a6b-7c8d-9e0f-1a2b3c4d5e6f: {103} Given ID value relationship--b1d2e3f4-5a6b-7c8d-9e0f-1a2b3c4d5e6f is not a valid UUIDv4 ID.
+    [!] Warning: relationship--c1e2f3a4-5b6c-7d8e-9f0a-1b2c3d4e5f6a: {103} Given ID value relationship--c1e2f3a4-5b6c-7d8e-9f0a-1b2c3d4e5f6a is not a valid UUIDv4 ID.
+    [!] Warning: relationship--d1f2a3b4-5c6d-7e8f-9a0b-1c2d3e4f5a6b: {103} Given ID value relationship--d1f2a3b4-5c6d-7e8f-9a0b-1c2d3e4f5a6b is not a valid UUIDv4 ID.
+    [!] Warning: relationship--e1a2b3c4-5d6f-7a8b-9c0d-1e2f3a4b5c6d: {103} Given ID value relationship--e1a2b3c4-5d6f-7a8b-9c0d-1e2f3a4b5c6d is not a valid UUIDv4 ID.
+    [!] Warning: relationship--f1b2c3d4-5e6a-7b8c-9d0e-1f2a3b4c5d6e: {103} Given ID value relationship--f1b2c3d4-5e6a-7b8c-9d0e-1f2a3b4c5d6e is not a valid UUIDv4 ID.
+    [!] Warning: identity--a1b2c3d4-5e6f-7a8b-9c0d-1e2f3a4b5c6d: {103} Given ID value identity--a1b2c3d4-5e6f-7a8b-9c0d-1e2f3a4b5c6d is not a valid UUIDv4 ID.
+    [!] Warning: identity--a1b2c3d4-5e6f-7a8b-9c0d-1e2f3a4b5c6d: {215} sectors contains a value not in the industry-sector-ov vocabulary.
+    [X] report--b1c2d3e4-5f6a-7b8c-9d0e-1f2a3b4c5d6e: id: 'report--b1c2d3e4-5f6a-7b8c-9d0e-1f2a3b4c5d6e' does not match the id format ([object-type]--[UUID])
+    [X] report--b1c2d3e4-5f6a-7b8c-9d0e-1f2a3b4c5d6e: object_refs[0]: 'threat-actor--c1d2e3f4-5a6b-7c8d-9e0f-1a2b3c4d5e6f' does not match the id format ([object-type]--[UUID])
+    [X] report--b1c2d3e4-5f6a-7b8c-9d0e-1f2a3b4c5d6e: object_refs[1]: 'malware--d1e2f3a4-5b6c-7d8e-9f0a-1b2c3d4e5f6a' does not match the id format ([object-type]--[UUID])
+    [X] report--b1c2d3e4-5f6a-7b8c-9d0e-1f2a3b4c5d6e: object_refs[2]: 'malware--e1f2a3b4-5c6d-7e8f-9a0b-1c2d3e4f5a6b' does not match the id format ([object-type]--[UUID])
+    [X] report--b1c2d3e4-5f6a-7b8c-9d0e-1f2a3b4c5d6e: object_refs[3]: 'malware--f1a2b3c4-5d6e-7f8a-9b0c-1d2e3f4a5b6c' does not match the id format ([object-type]--[UUID])
+    [X] report--b1c2d3e4-5f6a-7b8c-9d0e-1f2a3b4c5d6e: object_refs[4]: 'malware--a1b2c3d4-5e6f-7a8b-9c0d-1e2f3a4b5c6d' does not match the id format ([object-type]--[UUID])
+    [X] report--b1c2d3e4-5f6a-7b8c-9d0e-1f2a3b4c5d6e: object_refs[5]: 'malware--b1c2d3e4-5f6a-7b8c-9d0e-1f2a3b4c5d6e' does not match the id format ([object-type]--[UUID])
+    [X] report--b1c2d3e4-5f6a-7b8c-9d0e-1f2a3b4c5d6e: object_refs[6]: 'indicator--c1d2e3f4-5a6b-7c8d-9e0f-1a2b3c4d5e6f' does not match the id format ([object-type]--[UUID])
+    [X] report--b1c2d3e4-5f6a-7b8c-9d0e-1f2a3b4c5d6e: object_refs[7]: 'indicator--d1e2f3a4-5b6c-7d8e-9f0a-1b2c3d4e5f6a' does not match the id format ([object-type]--[UUID])
+    [X] report--b1c2d3e4-5f6a-7b8c-9d0e-1f2a3b4c5d6e: object_refs[8]: 'indicator--e1f2a3b4-5c6d-7e8f-9a0b-1c2d3e4f5a6b' does not match the id format ([object-type]--[UUID])
+    [X] report--b1c2d3e4-5f6a-7b8c-9d0e-1f2a3b4c5d6e: object_refs[9]: 'attack-pattern--f1a2b3c4-5d6e-7f8a-9b0c-1d2e3f4a5b6c' does not match the id format ([object-type]--[UUID])
+    [X] report--b1c2d3e4-5f6a-7b8c-9d0e-1f2a3b4c5d6e: object_refs[10]: 'attack-pattern--a1b2c3d4-5e6f-7a8b-9c0d-1e2f3a4b5c6d' does not match the id format ([object-type]--[UUID])
+    [X] report--b1c2d3e4-5f6a-7b8c-9d0e-1f2a3b4c5d6e: object_refs[11]: 'attack-pattern--b1c2d3e4-5f6a-7b8c-9d0e-1f2a3b4c5d6e' does not match the id format ([object-type]--[UUID])
+    [X] threat-actor--c1d2e3f4-5a6b-7c8d-9e0f-1a2b3c4d5e6f: id: 'threat-actor--c1d2e3f4-5a6b-7c8d-9e0f-1a2b3c4d5e6f' does not match the id format ([object-type]--[UUID])
+    [X] malware--d1e2f3a4-5b6c-7d8e-9f0a-1b2c3d4e5f6a: id: 'malware--d1e2f3a4-5b6c-7d8e-9f0a-1b2c3d4e5f6a' does not match the id format ([object-type]--[UUID])
+    [X] malware--e1f2a3b4-5c6d-7e8f-9a0b-1c2d3e4f5a6b: id: 'malware--e1f2a3b4-5c6d-7e8f-9a0b-1c2d3e4f5a6b' does not match the id format ([object-type]--[UUID])
+    [X] malware--f1a2b3c4-5d6e-7f8a-9b0c-1d2e3f4a5b6c: id: 'malware--f1a2b3c4-5d6e-7f8a-9b0c-1d2e3f4a5b6c' does not match the id format ([object-type]--[UUID])
+    [X] malware--a1b2c3d4-5e6f-7a8b-9c0d-1e2f3a4b5c6d: id: 'malware--a1b2c3d4-5e6f-7a8b-9c0d-1e2f3a4b5c6d' does not match the id format ([object-type]--[UUID])
+    [X] malware--b1c2d3e4-5f6a-7b8c-9d0e-1f2a3b4c5d6e: id: 'malware--b1c2d3e4-5f6a-7b8c-9d0e-1f2a3b4c5d6e' does not match the id format ([object-type]--[UUID])
+    [X] indicator--c1d2e3f4-5a6b-7c8d-9e0f-1a2b3c4d5e6f: id: 'indicator--c1d2e3f4-5a6b-7c8d-9e0f-1a2b3c4d5e6f' does not match the id format ([object-type]--[UUID])
+    [X] indicator--d1e2f3a4-5b6c-7d8e-9f0a-1b2c3d4e5f6a: id: 'indicator--d1e2f3a4-5b6c-7d8e-9f0a-1b2c3d4e5f6a' does not match the id format ([object-type]--[UUID])
+    [X] indicator--e1f2a3b4-5c6d-7e8f-9a0b-1c2d3e4f5a6b: id: 'indicator--e1f2a3b4-5c6d-7e8f-9a0b-1c2d3e4f5a6b' does not match the id format ([object-type]--[UUID])
+    [X] attack-pattern--f1a2b3c4-5d6e-7f8a-9b0c-1d2e3f4a5b6c: id: 'attack-pattern--f1a2b3c4-5d6e-7f8a-9b0c-1d2e3f4a5b6c' does not match the id format ([object-type]--[UUID])
+    [X] attack-pattern--a1b2c3d4-5e6f-7a8b-9c0d-1e2f3a4b5c6d: id: 'attack-pattern--a1b2c3d4-5e6f-7a8b-9c0d-1e2f3a4b5c6d' does not match the id format ([object-type]--[UUID])
+    [X] attack-pattern--b1c2d3e4-5f6a-7b8c-9d0e-1f2a3b4c5d6e: id: 'attack-pattern--b1c2d3e4-5f6a-7b8c-9d0e-1f2a3b4c5d6e' does not match the id format ([object-type]--[UUID])
+    [X] attack-pattern--c1e2f3a4-5b6c-7d8e-9f0a-1b2c3d4e5f6a: id: 'attack-pattern--c1e2f3a4-5b6c-7d8e-9f0a-1b2c3d4e5f6a' does not match the id format ([object-type]--[UUID])
+    [X] attack-pattern--d1f2a3b4-5c6d-7e8f-9a0b-1c2d3e4f5a6b: id: 'attack-pattern--d1f2a3b4-5c6d-7e8f-9a0b-1c2d3e4f5a6b' does not match the id format ([object-type]--[UUID])
+    [X] course-of-action--e1a2b3c4-5d6f-7a8b-9c0d-1e2f3a4b5c6d: id: 'course-of-action--e1a2b3c4-5d6f-7a8b-9c0d-1e2f3a4b5c6d' does not match the id format ([object-type]--[UUID])
+    [X] course-of-action--f1b2c3d4-5e6a-7b8c-9d0e-1f2a3b4c5d6e: id: 'course-of-action--f1b2c3d4-5e6a-7b8c-9d0e-1f2a3b4c5d6e' does not match the id format ([object-type]--[UUID])
+    [X] course-of-action--a1c2d3e4-5f6a-7b8c-9d0e-1f2a3b4c5d6e: id: 'course-of-action--a1c2d3e4-5f6a-7b8c-9d0e-1f2a3b4c5d6e' does not match the id format ([object-type]--[UUID])
+    [X] relationship--b1d2e3f4-5a6b-7c8d-9e0f-1a2b3c4d5e6f: id: 'relationship--b1d2e3f4-5a6b-7c8d-9e0f-1a2b3c4d5e6f' does not match the id format ([object-type]--[UUID])
+    [X] relationship--b1d2e3f4-5a6b-7c8d-9e0f-1a2b3c4d5e6f: source_ref: 'threat-actor--c1d2e3f4-5a6b-7c8d-9e0f-1a2b3c4d5e6f' does not match the id format ([object-type]--[UUID])
+    [X] relationship--b1d2e3f4-5a6b-7c8d-9e0f-1a2b3c4d5e6f: target_ref: 'malware--d1e2f3a4-5b6c-7d8e-9f0a-1b2c3d4e5f6a' does not match the id format ([object-type]--[UUID])
+    [X] relationship--c1e2f3a4-5b6c-7d8e-9f0a-1b2c3d4e5f6a: id: 'relationship--c1e2f3a4-5b6c-7d8e-9f0a-1b2c3d4e5f6a' does not match the id format ([object-type]--[UUID])
+    [X] relationship--c1e2f3a4-5b6c-7d8e-9f0a-1b2c3d4e5f6a: source_ref: 'threat-actor--c1d2e3f4-5a6b-7c8d-9e0f-1a2b3c4d5e6f' does not match the id format ([object-type]--[UUID])
+    [X] relationship--c1e2f3a4-5b6c-7d8e-9f0a-1b2c3d4e5f6a: target_ref: 'malware--b1c2d3e4-5f6a-7b8c-9d0e-1f2a3b4c5d6e' does not match the id format ([object-type]--[UUID])
+    [X] relationship--d1f2a3b4-5c6d-7e8f-9a0b-1c2d3e4f5a6b: id: 'relationship--d1f2a3b4-5c6d-7e8f-9a0b-1c2d3e4f5a6b' does not match the id format ([object-type]--[UUID])
+    [X] relationship--d1f2a3b4-5c6d-7e8f-9a0b-1c2d3e4f5a6b: source_ref: 'threat-actor--c1d2e3f4-5a6b-7c8d-9e0f-1a2b3c4d5e6f' does not match the id format ([object-type]--[UUID])
+    [X] relationship--d1f2a3b4-5c6d-7e8f-9a0b-1c2d3e4f5a6b: target_ref: 'attack-pattern--f1a2b3c4-5d6e-7f8a-9b0c-1d2e3f4a5b6c' does not match the id format ([object-type]--[UUID])
+    [X] relationship--e1a2b3c4-5d6f-7a8b-9c0d-1e2f3a4b5c6d: id: 'relationship--e1a2b3c4-5d6f-7a8b-9c0d-1e2f3a4b5c6d' does not match the id format ([object-type]--[UUID])
+    [X] relationship--e1a2b3c4-5d6f-7a8b-9c0d-1e2f3a4b5c6d: source_ref: 'indicator--c1d2e3f4-5a6b-7c8d-9e0f-1a2b3c4d5e6f' does not match the id format ([object-type]--[UUID])
+    [X] relationship--e1a2b3c4-5d6f-7a8b-9c0d-1e2f3a4b5c6d: target_ref: 'threat-actor--c1d2e3f4-5a6b-7c8d-9e0f-1a2b3c4d5e6f' does not match the id format ([object-type]--[UUID])
+    [X] relationship--f1b2c3d4-5e6a-7b8c-9d0e-1f2a3b4c5d6e: id: 'relationship--f1b2c3d4-5e6a-7b8c-9d0e-1f2a3b4c5d6e' does not match the id format ([object-type]--[UUID])
+    [X] relationship--f1b2c3d4-5e6a-7b8c-9d0e-1f2a3b4c5d6e: source_ref: 'course-of-action--e1a2b3c4-5d6f-7a8b-9c0d-1e2f3a4b5c6d' does not match the id format ([object-type]--[UUID])
+    [X] relationship--f1b2c3d4-5e6a-7b8c-9d0e-1f2a3b4c5d6e: target_ref: 'attack-pattern--b1c2d3e4-5f6a-7b8c-9d0e-1f2a3b4c5d6e' does not match the id format ([object-type]--[UUID])
+    [X] identity--a1b2c3d4-5e6f-7a8b-9c0d-1e2f3a4b5c6d: id: 'identity--a1b2c3d4-5e6f-7a8b-9c0d-1e2f3a4b5c6d' does not match the id format ([object-type]--[UUID])
+    [X] marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487: TLP marking definitions must match one of those defined in the STIX specification.
+    [X] indicator--d1e2f3a4-5b6c-7d8e-9f0a-1b2c3d4e5f6a: Pattern failed to validate: FAIL: Error found at line 1:27. mismatched input ''' expecting StringLiteral.
